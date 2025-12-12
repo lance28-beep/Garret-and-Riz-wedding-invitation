@@ -380,7 +380,7 @@ export function Details() {
                   </h4>
                   <div className="space-y-2 sm:space-y-2.5">
                     <p className="text-xs sm:text-sm text-[#D1AB6D] leading-relaxed">
-                      The seating will be formal, RSVP-style. That's why we're asking you to fill out this invitation form to secure your spot. Kindly do not bring plus ones unless explicitly stated in your invitation.
+                      We&apos;re so excited to have you celebrate with us! Unfortunately due to limited space and our venue&apos;s capacity, we&apos;re unable to accommodate additional guests. We truly hope you understand and we can&apos;t wait to celebrate together on the day!
                     </p>
                   </div>
                 </div>

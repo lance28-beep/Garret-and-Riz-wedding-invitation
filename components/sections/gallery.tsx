@@ -19,7 +19,7 @@ const windSong = WindSong({
   weight: "400",
 })
 
-const galleryHashtag = "#MarzanAndNicaWedding"
+const galleryHashtag = "#ForeverSophistiKatedWithChristian"
 
 const galleryItems = [ 
   { image: "/desktop-background/couple (7).jpeg", text: " " },

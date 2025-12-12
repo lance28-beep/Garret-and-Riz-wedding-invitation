@@ -105,6 +105,9 @@ export function SnapShare() {
       id="snap-share"
       className="relative overflow-hidden py-14 sm:py-20 md:py-24 lg:py-28 bg-transparent"
     >
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
+      
       <div className="relative max-w-6xl mx-auto px-3 sm:px-6 md:px-8">
         <motion.div
           className="text-center mb-7 sm:mb-12"
@@ -112,18 +115,25 @@ export function SnapShare() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          <div className="inline-flex items-center gap-1.5 rounded-full border border-white/30 bg-white/10 px-3.5 py-1.5 text-[8px] sm:text-xs tracking-[0.42em] uppercase text-white">
-            Share Your Memories
+          {/* Glass overlay container */}
+          <div className="relative backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+            <div className="inline-flex items-center gap-1.5 rounded-full border border-[#525E2C]/30 bg-white/10 px-3.5 py-1.5 text-[8px] sm:text-xs tracking-[0.42em] uppercase mb-3 sm:mb-4" style={{ color: "#525E2C" }}>
+              Share Your Memories
+            </div>
+            <h2
+              className="style-script-regular text-2xl sm:text-5xl md:text-6xl lg:text-7xl mt-3 sm:mt-4"
+              style={{ color: "#525E2C" }}
+            >
+              Capture & Share the Celebration
+            </h2>
+            <p 
+              className={`${cormorant.className} text-[10px] sm:text-sm md:text-base max-w-2xl mx-auto mt-3 sm:mt-4 leading-relaxed px-2`}
+              style={{ color: "#525E2C" }}
+            >
+              Capture the beautiful moments of {groomNickname} & {brideNickname}'s wedding day. Share your favorite memories so our keepsake gallery glows with every smile, embrace, and celebration from this special day.
+            </p>
+            <div className="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-[#525E2C]/60 to-transparent" />
           </div>
-          <h2
-            className="style-script-regular text-2xl sm:text-5xl md:text-6xl lg:text-7xl text-white drop-shadow-[0_18px_40px_rgba(10,0,25,0.8)] mt-3 sm:mt-4"
-          >
-            Capture & Share the Celebration
-          </h2>
-          <p className={`${cormorant.className} text-[10px] sm:text-sm md:text-base text-white/85 max-w-2xl mx-auto mt-3 sm:mt-4 leading-relaxed px-2`}>
-            Capture the beautiful moments of {groomNickname} & {brideNickname}'s wedding day. Share your favorite memories so our keepsake gallery glows with every smile, embrace, and celebration from this special day.
-          </p>
-          <div className="mx-auto mt-5 h-px w-24 bg-gradient-to-r from-transparent via-white/60 to-transparent" />
         </motion.div>
 
         <motion.div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-7 lg:gap-10" variants={staggerChildren} initial="initial" animate="animate">
@@ -143,7 +153,7 @@ export function SnapShare() {
                     </p>
                     <button
                       onClick={async () => {
-                        const hashtag = "#OfficiallyKATEAndCHRIS"
+                        const hashtag = "#ForeverSophistiKatedWithChristian"
                         try {
                           await navigator.clipboard.writeText(hashtag)
                           setCopiedHashtag(true)
@@ -155,7 +165,7 @@ export function SnapShare() {
                       className="w-full flex items-center justify-center gap-2 bg-white/20 hover:bg-white/30 backdrop-blur-sm rounded-lg px-4 py-2.5 sm:py-3 border border-white/30 hover:border-white/50 transition-all duration-200 group"
                     >
                       <span className={`${cormorant.className} text-white font-semibold text-sm sm:text-base md:text-lg tracking-wide`}>
-                        #OfficiallyKATEAndCHRIS
+                        #ForeverSophistiKatedWithChristian
                       </span>
                       <Copy className={`w-4 h-4 text-white/80 group-hover:text-white transition-colors ${copiedHashtag ? "text-green-300" : ""}`} />
                     </button>
@@ -325,11 +335,17 @@ export function SnapShare() {
 
         <motion.div className="text-center mt-7 sm:mt-12" variants={fadeInUp}>
           <div className="bg-white/10 rounded-[22px] p-4 sm:p-7 shadow-[0_25px_80px_rgba(0,0,0,0.35)] border border-white/20 max-w-3xl mx-auto backdrop-blur-xl">
-            <p className={`${cormorant.className} text-white text-[13px] sm:text-base md:text-lg leading-relaxed mb-4 px-2`}>
+            <p 
+              className={`${cormorant.className} text-[13px] sm:text-base md:text-lg leading-relaxed mb-4 px-2`}
+              style={{ color: "#525E2C" }}
+            >
               Thank you for helping make {groomNickname} & {brideNickname}'s wedding celebration memorable. Your photos and messages create beautiful memories
               that will last a lifetime—keep sharing the joy throughout the evening.
             </p>
-            <div className={`${cormorant.className} flex items-center justify-center gap-2 text-white text-[10px] sm:text-xs tracking-[0.32em] uppercase`}>
+            <div 
+              className={`${cormorant.className} flex items-center justify-center gap-2 text-[10px] sm:text-xs tracking-[0.32em] uppercase`}
+              style={{ color: "#525E2C" }}
+            >
               <span>See you in the celebration</span>
             </div>
           </div>

@@ -17,6 +17,9 @@ export function Welcome() {
       id="welcome"
       className="relative overflow-hidden bg-transparent py-12 sm:py-16 md:py-20"
     >
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
+      
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
         <div className="relative overflow-hidden rounded-3xl sm:rounded-[2rem] border border-[#E0CFB5]/70 bg-[#525E2C] backdrop-blur-2xl shadow-[0_16px_60px_rgba(0,0,0,0.35)] px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
           {/* Layered glass + light accents for readability */}

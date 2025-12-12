@@ -273,34 +273,43 @@ export function GuestList() {
 
   return (
     <Section id="guest-list" className="relative z-30 py-6 sm:py-10 md:py-12 lg:py-16">
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
+      
       {/* Header */}
       <div className="relative z-10 text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10 px-2 sm:px-3 md:px-4">
-        {/* Small label */}
-        <p
-          className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-white mb-2`}
-          style={{ textShadow: "0 2px 10px rgba(0,0,0,0.8)" }}
-        >
-          Confirm Your Attendance
-        </p>
-        
-        <h2
-          className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-1.5 sm:mb-3 md:mb-4"
-          style={{ textShadow: "0 4px 18px rgba(0,0,0,0.85)" }}
-        >
-          RSVP
-        </h2>
-        
-        <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-white/90 font-light max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`}>
-          Please search for your name below to confirm your presence at our special day
-        </p>
-        
-        {/* Decorative element below subtitle */}
-        <div className="flex items-center justify-center gap-1.5 sm:gap-2 mt-2 sm:mt-3 md:mt-4 lg:mt-5">
-          <div className="w-6 sm:w-8 md:w-12 lg:w-16 h-px bg-gradient-to-r from-transparent via-[#E0CFB5] to-transparent" />
-          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E0CFB5]/90 rounded-full" />
-          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-white/85 rounded-full" />
-          <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#E0CFB5]/90 rounded-full" />
-          <div className="w-6 sm:w-8 md:w-12 lg:w-16 h-px bg-gradient-to-l from-transparent via-[#E0CFB5] to-transparent" />
+        {/* Glass overlay container */}
+        <div className="relative backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+          {/* Small label */}
+          <p
+            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] mb-2`}
+            style={{ color: "#525E2C" }}
+          >
+            Confirm Your Attendance
+          </p>
+          
+          <h2
+            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl mb-1.5 sm:mb-3 md:mb-4"
+            style={{ color: "#525E2C" }}
+          >
+            RSVP
+          </h2>
+          
+          <p 
+            className={`${cormorant.className} text-xs sm:text-sm md:text-base font-light max-w-xl mx-auto leading-relaxed px-2 mb-2 sm:mb-3`}
+            style={{ color: "#525E2C" }}
+          >
+            Please search for your name below to confirm your presence at our special day
+          </p>
+          
+          {/* Decorative element below subtitle */}
+          <div className="flex items-center justify-center gap-1.5 sm:gap-2 mt-2 sm:mt-3 md:mt-4 lg:mt-5">
+            <div className="w-6 sm:w-8 md:w-12 lg:w-16 h-px bg-gradient-to-r from-transparent via-[#525E2C]/60 to-transparent" />
+            <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#525E2C]/90 rounded-full" />
+            <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#525E2C]/70 rounded-full" />
+            <div className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-[#525E2C]/90 rounded-full" />
+            <div className="w-6 sm:w-8 md:w-12 lg:w-16 h-px bg-gradient-to-l from-transparent via-[#525E2C]/60 to-transparent" />
+          </div>
         </div>
       </div>
 
@@ -316,10 +325,16 @@ export function GuestList() {
                   <Search className="h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 text-white" />
                 </div>
                 <div>
-                  <label className="block text-xs sm:text-sm md:text-base font-semibold text-white font-sans mb-0.5 sm:mb-1">
+                  <label 
+                    className="block text-xs sm:text-sm md:text-base font-semibold font-sans mb-0.5 sm:mb-1"
+                    style={{ color: "#525E2C" }}
+                  >
                     Find Your Name
                   </label>
-                  <p className="text-[10px] sm:text-xs text-white/80 font-sans">
+                  <p 
+                    className="text-[10px] sm:text-xs font-sans"
+                    style={{ color: "#525E2C" }}
+                  >
                     Type as you search to see instant results
                   </p>
                 </div>

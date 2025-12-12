@@ -15,7 +15,7 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "December 31, 2025",
+      deadline: "December 20, 2025",
     },
   },
   ceremony: {
@@ -37,12 +37,12 @@ export const siteConfig = {
     theme: "Blue Gray & Gold Motif",
     colors: ["#BFCDD8", "#8498B0", "#D2AC6E", "#E0CFB5", "#F1F1EF"],
     sponsors: {
-      male: "Beige Barong, Black Pants and Leather Shoes",
-      female: "Beige/Gold Long Gown"
+      male: "Black Suit",
+      female: "Sage Green Dress/Gown"
     },
     guests: {
-      gents: "Polo & Pants (Strictly no Tshirt)",
-      ladies: "Formal Dress/Gown/Suit"
+      gents: "Polo & Pants (Strictly no Tshirt) - Nude, Beige or Gold",
+      ladies: "Formal Dress/Gown/Suit - Nude, Beige or Gold"
     },
     note: "We kindly request our guests to dress in formal attire with a color of our motif."
   },

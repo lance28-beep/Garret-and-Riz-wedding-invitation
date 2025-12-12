@@ -70,30 +70,40 @@ export function WeddingTimeline() {
       id="wedding-timeline"
       className="relative py-8 sm:py-10 md:py-14 lg:py-18 overflow-hidden"
     >
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
+      
       {/* Header - matching details section style, sage motif */}
       <div className="relative z-10 text-center mb-6 sm:mb-9 md:mb-12 px-3 sm:px-4">
         {/* Glass effect container */}
-        <div className="backdrop-blur-md bg-[#909E8D]/25 border border-white/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+        <div className="backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
           {/* Small label */}
           <p
-            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase text-white mb-2`}
+            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase mb-2`}
+            style={{ color: "#525E2C" }}
           >
             Wedding Day Schedule
           </p>
 
-          <h2 className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-1.5 sm:mb-3 md:mb-4">
+          <h2 
+            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-1.5 sm:mb-3 md:mb-4"
+            style={{ color: "#525E2C" }}
+          >
             Our Wedding Timeline
           </h2>
 
-          <p className="text-[11px] sm:text-sm md:text-base lg:text-lg text-white max-w-xl mx-auto leading-relaxed px-2">
+          <p 
+            className="text-[11px] sm:text-sm md:text-base lg:text-lg max-w-xl mx-auto leading-relaxed px-2"
+            style={{ color: "#525E2C" }}
+          >
             Join Christian &amp; Kate as we celebrate our special day together.
           </p>
 
           {/* Simple divider */}
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
-            <div className="w-1.5 h-1.5 rounded-full bg-white/90" />
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-white/60 to-transparent" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#525E2C]/60 to-transparent" />
+            <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#525E2C" }} />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#525E2C]/60 to-transparent" />
           </div>
         </div>
       </div>

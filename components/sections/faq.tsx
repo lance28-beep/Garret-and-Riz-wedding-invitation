@@ -25,7 +25,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I bring a plus one?",
     answer:
-      "We'd love to include everyone, but due to limited space and resources, we kindly ask that only those we've personally invited join us for the celebration.",
+      "We're so excited to have you celebrate with us! Unfortunately due to limited space and our venue's capacity, we're unable to accommodate additional guests. We truly hope you understand and we can't wait to celebrate together on the day!",
   },
   {
     question: "Is there parking available?",
@@ -35,7 +35,7 @@ const faqItems: FAQItem[] = [
   {
     question: "How do I RSVP?",
     answer:
-      `Please RSVP on or before December 31, 2025 through the RSVP section on this invitation. We kindly ask for your response to help us prepare for the big day.`,
+      `Please RSVP on or before December 20, 2025 through the RSVP section on this invitation. We kindly ask for your response to help us prepare for the big day.`,
   },
   {
     question: "Will there be assigned seating?",

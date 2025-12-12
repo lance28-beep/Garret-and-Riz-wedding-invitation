@@ -28,27 +28,39 @@ export function Registry() {
       id="registry"
       className="relative overflow-hidden py-10 sm:py-12 md:py-16 lg:py-20"
     >
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
+      
       <div className="relative z-10 text-center mb-6 sm:mb-8 md:mb-10 px-3 sm:px-4">
-        <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
-          <div className="w-8 sm:w-12 md:w-16 h-px bg-white/60" />
-          <div className="w-1.5 h-1.5 bg-white/80 rounded-full" />
-          <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
-          <div className="w-1.5 h-1.5 bg-white/80 rounded-full" />
-          <div className="w-8 sm:w-12 md:w-16 h-px bg-white/60" />
-        </div>
-        
-        <h2 className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-2 sm:mb-3 md:mb-4">
-          Gift Guide
-        </h2>
-        
-        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/90 font-light max-w-2xl mx-auto leading-relaxed px-2">
-          Your presence is the greatest gift. Should you wish to give, a monetary gift to help us begin our new life together would mean so much to us.
-        </p>
-        
-        <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
-          <div className="w-1.5 h-1.5 bg-white/80 rounded-full" />
-          <div className="w-1.5 h-1.5 bg-white/60 rounded-full" />
-          <div className="w-1.5 h-1.5 bg-white/80 rounded-full" />
+        {/* Glass overlay container */}
+        <div className="relative backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+          <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#525E2C]/60 to-transparent" />
+            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#525E2C]/70 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#525E2C]/60 to-transparent" />
+          </div>
+          
+          <h2 
+            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-2 sm:mb-3 md:mb-4"
+            style={{ color: "#525E2C" }}
+          >
+            Gift Guide
+          </h2>
+          
+          <p 
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-light max-w-2xl mx-auto leading-relaxed px-2"
+            style={{ color: "#525E2C" }}
+          >
+            Your presence is the greatest gift. Should you wish to give, a monetary gift to help us begin our new life together would mean so much to us.
+          </p>
+          
+          <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
+            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#525E2C]/70 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
+          </div>
         </div>
       </div>
 

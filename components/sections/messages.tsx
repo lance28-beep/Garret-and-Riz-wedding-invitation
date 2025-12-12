@@ -346,26 +346,36 @@ export function Messages() {
       id="messages"
       className="relative overflow-hidden"
     >
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
+      
       <div className="relative max-w-6xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-4 sm:mb-6 md:mb-8 lg:mb-10">
-          <div className="space-y-2 sm:space-y-2.5">
+          {/* Glass overlay container */}
+          <div className="relative backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+            <div className="space-y-2 sm:space-y-2.5">
+              <p
+                className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em]`}
+                style={{ color: "#525E2C" }}
+              >
+                Messages for Christian &amp; Kate
+              </p>
+              <h2 
+                className="style-script-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl"
+                style={{ color: "#525E2C" }}
+              >
+                Love Notes &amp; Prayers
+              </h2>
+            </div>
+            
             <p
-              className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-white`}
-              style={{ textShadow: "0 2px 10px rgba(0,0,0,0.75)" }}
+              className={`${cormorant.className} text-xs sm:text-sm md:text-base font-light max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 mt-2`}
+              style={{ color: "#525E2C" }}
             >
-              Messages for Christian &amp; Kate
+              Leave a heartfelt message for Christian &amp; Kate. Every wish and prayer becomes part of their forever story.
             </p>
-            <h2 className="style-script-regular text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white drop-shadow-md">
-              Love Notes &amp; Prayers
-            </h2>
           </div>
-          
-          <p
-            className={`${cormorant.className} text-xs sm:text-sm md:text-base text-white/95 font-light max-w-3xl mx-auto leading-relaxed px-2 sm:px-4 mt-2`}
-          >
-            Leave a heartfelt message for Christian &amp; Kate. Every wish and prayer becomes part of their forever story.
-          </p>
         </div>
 
         {/* Form Section */}
