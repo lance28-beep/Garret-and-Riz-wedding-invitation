@@ -6,6 +6,7 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react"
 import { Section } from "@/components/section"
 import { motion } from "motion/react"
 import { Cormorant_Garamond, WindSong } from "next/font/google"
+import { siteConfig } from "@/content/site"
 // Removed circular gallery in favor of a responsive masonry layout
 
 const cormorant = Cormorant_Garamond({
@@ -141,7 +142,7 @@ export function Gallery() {
           </div>
 
           <p className={`${cormorant.className} text-sm sm:text-base md:text-lg font-light max-w-2xl mx-auto leading-relaxed mt-4 sm:mt-6`} style={{ color: "#525E2C" }}>
-            Cherished memories from our journey together, leading to our special day on December 20, 2025 at St. Augustine Parish Church and La Mariposa Tagaytay — beautiful moments filled with love, joy, and laughter that we&apos;ll treasure forever.
+            Cherished memories from our journey together, leading to our special day on {siteConfig.ceremony.date} at {siteConfig.ceremony.venue} and {siteConfig.reception.venue} — beautiful moments filled with love, joy, and laughter that we&apos;ll treasure forever.
           </p>
 
           <div className="flex items-center justify-center gap-2 mt-6 sm:mt-8">
