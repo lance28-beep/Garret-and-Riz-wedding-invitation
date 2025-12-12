@@ -17,20 +17,11 @@ const paymentMethods = [
 
 type PaymentId = typeof paymentMethods[number]["id"]
 
-const gcashOptions = [
-  { id: "gcash1", label: "GCash 1", src: "/QR/Gcash1.png" },
-  { id: "gcash2", label: "GCash 2", src: "/QR/Gcash2.png" },
-] as const
-
 export function Registry() {
   const [activeMethod, setActiveMethod] = useState<PaymentId>("gcash")
-  const [activeGcash, setActiveGcash] = useState<(typeof gcashOptions)[number]["id"]>("gcash1")
 
   const activeDetails = paymentMethods.find((method) => method.id === activeMethod)
-  const activeQrSrc =
-    activeMethod === "gcash"
-      ? gcashOptions.find((o) => o.id === activeGcash)?.src ?? gcashOptions[0].src
-      : ""
+  const activeQrSrc = activeMethod === "gcash" ? "/QR/QR.png" : ""
 
   return (
     <Section
@@ -62,8 +53,8 @@ export function Registry() {
       </div>
 
       <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6">
-        <div className="relative bg-[#F7F5F1]/95 backdrop-blur-md border border-[#F7E6CA]/80 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.45)] p-4 sm:p-6 md:p-8 overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-white/35 via-transparent to-[#F7E6CA]/18 pointer-events-none" />
+        <div className="relative bg-[#F7F5F1]/95 backdrop-blur-md border border-[#E0CFB5]/80 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.45)] p-4 sm:p-6 md:p-8 overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-white/35 via-transparent to-[#E0CFB5]/18 pointer-events-none" />
 
           <div className="relative z-10">
             <div className="flex flex-wrap gap-3 sm:gap-4 justify-center mb-5 sm:mb-6">
@@ -96,28 +87,6 @@ export function Registry() {
                   {activeDetails.label}
                 </div>
                 <div className="flex flex-col items-center gap-4 w-full">
-                  {activeMethod === "gcash" && (
-                    <div className="flex flex-wrap justify-center gap-2">
-                      {gcashOptions.map((option) => {
-                        const isActive = option.id === activeGcash
-                        return (
-                          <button
-                            key={option.id}
-                            type="button"
-                            onClick={() => setActiveGcash(option.id)}
-                            className={`px-3 py-1.5 rounded-full border text-xs sm:text-sm font-semibold transition-all duration-200 ${
-                              isActive
-                                ? "bg-[#324D3E] text-white border-[#324D3E]"
-                                : "bg-white text-[#324D3E] border-[#324D3E]/40 hover:border-[#324D3E]/80"
-                            }`}
-                          >
-                            {option.label}
-                          </button>
-                        )
-                      })}
-                    </div>
-                  )}
-
                   <div className="w-56 h-56 sm:w-64 sm:h-64 border-2 border-dashed border-[#324D3E]/30 rounded-xl sm:rounded-2xl flex items-center justify-center bg-white relative overflow-hidden">
                     <Image
                       src={activeQrSrc}
@@ -128,7 +97,7 @@ export function Registry() {
                     />
                   </div>
                   <p className="text-sm sm:text-base text-[#324D3E] max-w-md">
-                    Tap the toggles above to switch between GCash QR options.
+                    Scan the QR code to send your gift via GCash.
                   </p>
                 </div>
               </div>

@@ -1,17 +1,17 @@
 export const siteConfig = {
   couple: {
-    bride: "Jhessa May N. Eugenio",
-    brideNickname: "Jhessa May",
-    groom: "Al Josef Rai A. Tan",
-    groomNickname: "Al Josef",
+    bride: "Kate",
+    brideNickname: "Kate",
+    groom: "Christian",
+    groomNickname: "Christian",
   },
   wedding: {
-    date: "March 06, 2026",
+    date: "January 10, 2026",
     time: "2:00 PM",
-    venue: "St. Augustine Parish Church - Poblacion II, Mendez, Cavite",
+    venue: "St. Joseph the Patriarch Parish, Mabolo, Cebu City",
     tagline: "are getting married!",
-    theme: "Blush & Sand Motif",
-    motif: "#FADDE0, #E0B4B1, #D2A4A4, #F7E6CA, #E9D5C3, #D3B9A2",
+    theme: "Blue Gray & Gold Motif",
+    motif: "#BFCDD8, #8498B0, #D2AC6E, #E0CFB5, #F1F1EF",
   },
   details: {
     rsvp: {
@@ -19,23 +19,23 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "St. Augustine Parish Church - Poblacion II, Mendez, Cavite",
-    venue: "St. Augustine Parish Church",
-    date: "March 06, 2026",
-    day: "Friday",
+    location: "St. Joseph the Patriarch Parish, Mabolo, Cebu City",
+    venue: "St. Joseph the Patriarch Parish",
+    date: "January 10, 2026",
+    day: "Saturday",
     time: "2:00 PM",
     entourageTime: "1:30 PM",
     guestsTime: "1:30 PM",
   },
   reception: {
-    location: "La Mariposa Tagaytay Events Place",
-    venue: "La Mariposa Tagaytay Events Place",
-    date: "March 06, 2026",
-    time: "Reception to follow",
+    location: "Golden Peak Hotel & Suites, Escario Cebu",
+    venue: "Golden Peak Hotel & Suites",
+    date: "January 10, 2026",
+    time: "Following the ceremony",
   },
   dressCode: {
-    theme: "Blush & Sand Motif",
-    colors: ["#FADDE0", "#E0B4B1", "#D2A4A4", "#F7E6CA", "#E9D5C3", "#D3B9A2"],
+    theme: "Blue Gray & Gold Motif",
+    colors: ["#BFCDD8", "#8498B0", "#D2AC6E", "#E0CFB5", "#F1F1EF"],
     sponsors: {
       male: "Beige Barong, Black Pants and Leather Shoes",
       female: "Beige/Gold Long Gown"
@@ -47,23 +47,23 @@ export const siteConfig = {
     note: "We kindly request our guests to dress in formal attire with a color of our motif."
   },
   narratives: {
-    groom: `The first time Al saw Jhessa, time seemed to slow down. It was an ordinary day that instantly became unforgettable: one smile, one hello, and suddenly his world had a new center. He didn’t have the perfect words ready, but he knew he had met someone who felt like home.
+    groom: `They met back in their architecture college days — just batchmates then, each living a separate life. She was the maarte one, the selective type who chose carefully the people she let in. He, on the other hand, was the friendly guy — kind, approachable, and someone everyone could easily talk to. They couldn't have been more different.
 
-Early conversations turned into late-night talks, sharing dreams, favorite meals, and whispered prayers for a future together. With every small adventure—coffee runs, long drives, quiet walks—Al found himself choosing her over and over again. He loved how she laughed freely, how she listened with her whole heart, and how her faith steadied him.
+Three years after graduation, fate decided to draw their lines together. It started simply — a few replies to her social media stories, a borrowed book, small conversations that didn't mean much at first. Then one day, they met again at a construction site. This time, they talked — really talked. And something was different.
 
-There were seasons of distance and long workdays, but every reunion reminded him why he stayed patient: because Jhessa was worth every mile and every minute apart. When he finally knelt to ask for her hand, it wasn’t a question of “if,” only “when can we start forever?”`,
-    bride: `Jhessa remembers the first time Al said her name. It was gentle but sure, a kindness that made her feel both seen and safe. In that softness, she found a partner who met her with the same grace she prayed to give.
+From then on, messages turned into conversations, and conversations turned into something deeper. It was during Sinulog when he invited her to visit Sto. Niño Church. They shared prayers & laughter — spending the whole day simply enjoying each other's company. From then on, they have learned, grown, and become better together in all aspects of life.`,
+    bride: `She found him interesting, warm, and genuine. Days after their time at Sto. Niño Church, she realized that maybe, just maybe, this was the man she had been praying for — someone who would bring her closer to God.
 
-Al’s steadiness won her heart: the way he showed up, even when schedules were tight, and how he always found lightness in the small things. He celebrated her wins, held space for her worries, and never hesitated to choose “us” in every decision.
+Months later, they made it official. Their love is not the kind you see in movies — not perfect, not always grand. But it is real, quiet, and steadfast. Two people, choosing each other every single day.
 
-Now, as they prepare to say yes before God and the people they love most, Jhessa is grateful for the patience, humor, and hope Al brings to every day. She knows this next chapter is just the start of the love story they get to write together.`,
+And now, as they begin a new chapter of their lives, they invite you to witness and celebrate the love that God has written for them.`,
   },
   colors: {
-    primary: "#4A7C59",
-    secondary: "#8FB99A",
+    primary: "#BFCDD8",
+    secondary: "#8498B0",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1N-h4NW1Kov8GY2_lOiidPIwoDCz0CZNm?usp=sharing",
+    googleDriveLink: "https://drive.google.com/drive/folders/1LSMV4MFdOMFPaAJQ_w5nulW_ICnem8qv?usp=sharing",
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }

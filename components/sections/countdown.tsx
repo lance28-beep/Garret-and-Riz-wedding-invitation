@@ -38,7 +38,7 @@ function CountdownUnit({ value, label }: CountdownUnitProps) {
       {/* Elegant card with subtle hover glow */}
       <div className="relative w-full max-w-[88px] sm:max-w-[96px] md:max-w-[110px] lg:max-w-[120px] group">
         {/* Glow on hover */}
-        <div className="pointer-events-none absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-[#E9D5C3]/28 via-[#9B7C6A]/18 to-transparent opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-100" />
+        <div className="pointer-events-none absolute -inset-[3px] rounded-2xl bg-gradient-to-br from-[#E0CFB5]/28 via-[#9B7C6A]/18 to-transparent opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-100" />
         <div className="pointer-events-none absolute inset-0 rounded-2xl bg-white/5 blur-xl opacity-70" />
 
         {/* Main card */}
@@ -175,8 +175,8 @@ export function Countdown() {
       className="relative bg-transparent py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
     >
       {/* Soft overlay for readability */}
-      <div className="pointer-events-none absolute inset-0 bg-[#D2A4A4]/45 sm:bg-[#D2A4A4]/40 backdrop-blur-[1px]" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#D2A4A4]/55 via-transparent to-[#D2A4A4]/65" />
+      <div className="pointer-events-none absolute inset-0 bg-[#525E2C]/45 sm:bg-[#525E2C]/40 backdrop-blur-[1px]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#525E2C]/55 via-transparent to-[#525E2C]/65" />
       {/* Clean background with solid burgundy tone (no extra overlays) */}
 
       {/* Monogram - centered at top */}
@@ -189,7 +189,7 @@ export function Countdown() {
         >
           <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[36rem] lg:h-[36rem] xl:w-[40rem] xl:h-[40rem] opacity-90">
             <Image
-              src="/monogram/newmonogram.png"
+              src="/monogram/monogram.png"
               alt={`${groomNickname} & ${brideNickname} Monogram`}
               fill
               className="object-contain"

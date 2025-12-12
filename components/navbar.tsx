@@ -86,28 +86,28 @@ export function Navbar() {
     <nav
       className={`sticky top-0 z-50 transition-all duration-700 ease-out ${
         isScrolled
-          ? "bg-[#FADDE0]/96 backdrop-blur-xl shadow-[0_10px_40px_rgba(114,65,84,0.28)] border-b border-[#E8B7C4]/70"
-          : "bg-[#FADDE0]/92 backdrop-blur-lg border-b border-[#E8B7C4]/60"
+          ? "bg-[#F0F0EE]/96 backdrop-blur-xl shadow-[0_10px_40px_rgba(82,94,44,0.28)] border-b border-[#909E8D]/70"
+          : "bg-[#F0F0EE]/92 backdrop-blur-lg border-b border-[#909E8D]/60"
       }`}
     >
       {/* Elegant glow effect when scrolled */}
       {isScrolled && (
-        <div className="absolute inset-0 bg-gradient-to-r from-white/28 via-[#F3C6D0]/16 to-white/28 pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/28 via-[#D1AB6D]/16 to-white/28 pointer-events-none" />
       )}
       {/* Subtle texture overlay for depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/8 via-transparent to-[#E8B7C4]/12 pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white/8 via-transparent to-[#909E8D]/12 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-3 sm:px-4 lg:px-8 relative">
         <div className="flex justify-between items-center h-14 sm:h-16 md:h-20">
           <Link href="#home" className="flex-shrink-0 group relative z-10">
             <div className="relative w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-20 lg:h-20">
               <Image
-                src="/monogram/newmonogram.png"
+                src="/monogram/monogram.png"
                 alt={`${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} Monogram`}
                 fill
                 className="object-contain group-hover:scale-110 group-active:scale-105 transition-all duration-500 drop-shadow-[0_4px_16px_rgba(74,31,42,0.2)] group-hover:drop-shadow-[0_6px_22px_rgba(74,31,42,0.28)]"
                 style={{
-                  filter: "brightness(0) saturate(100%) invert(1)",
+                  filter: "brightness(0) saturate(100%) invert(27%) sepia(15%) saturate(2000%) hue-rotate(60deg) brightness(0.5)",
                 }}
               />
             </div>
@@ -125,21 +125,21 @@ export function Navbar() {
                   href={link.href}
                   className={`px-3 lg:px-4 py-2 text-xs lg:text-sm ${cormorant.className} font-medium rounded-lg transition-all duration-500 relative group ${
                     isActive
-                      ? "text-[#4A1F2A] bg-white/90 backdrop-blur-md shadow-[0_6px_18px_rgba(74,31,42,0.28)] border border-[#E8B7C4]"
-                      : "text-[#5E2837]/90 hover:text-[#4A1F2A] hover:bg-white/90 hover:border hover:border-[#E8B7C4]/80 hover:shadow-[0_6px_18px_rgba(74,31,42,0.22)] hover:scale-105 active:scale-95 bg-white/0 border border-transparent"
+                      ? "text-[#525E2C] bg-white/90 backdrop-blur-md shadow-[0_6px_18px_rgba(82,94,44,0.28)] border border-[#909E8D]"
+                      : "text-[#525E2C]/90 hover:text-[#525E2C] hover:bg-white/90 hover:border hover:border-[#909E8D]/80 hover:shadow-[0_6px_18px_rgba(82,94,44,0.22)] hover:scale-105 active:scale-95 bg-white/0 border border-transparent"
                   }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#4A1F2A] via-[#4A1F2A] to-[#4A1F2A] transition-all duration-500 rounded-full ${
+                    className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-[#525E2C] via-[#525E2C] to-[#525E2C] transition-all duration-500 rounded-full ${
                       isActive
-                        ? "w-full shadow-[0_0_10px_rgba(74,31,42,0.6)]"
-                        : "w-0 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(74,31,42,0.5)]"
+                        ? "w-full shadow-[0_0_10px_rgba(82,94,44,0.6)]"
+                        : "w-0 group-hover:w-full group-hover:shadow-[0_0_8px_rgba(82,94,44,0.5)]"
                     }`}
                   />
                   {/* Active indicator dot */}
                   {isActive && (
-                    <div className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-[#4A1F2A] animate-pulse shadow-[0_0_6px_rgba(74,31,42,0.8)]" />
+                    <div className="absolute top-1 right-1 w-1.5 h-1.5 rounded-full bg-[#525E2C] animate-pulse shadow-[0_0_6px_rgba(82,94,44,0.8)]" />
                   )}
                   {/* Subtle accent on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/40 to-transparent rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10" />
@@ -151,18 +151,18 @@ export function Navbar() {
           <div className="md:hidden flex items-center h-full">
             {/* Decorative halo to improve tap target and visual affordance */}
             <div className="relative">
-              <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-white/10 via-[#F7E6CA]/14 to-transparent blur-md pointer-events-none" />
+              <div className="absolute -inset-1 rounded-full bg-gradient-to-br from-white/10 via-[#E0CFB5]/14 to-transparent blur-md pointer-events-none" />
               <StaggeredMenu
                 position="left"
                 items={menuItems}
                 socialItems={[]}
                 displaySocials={false}
                 displayItemNumbering={true}
-                menuButtonColor="#4A1F2A"
-                openMenuButtonColor="#4A1F2A"
+                menuButtonColor="#525E2C"
+                openMenuButtonColor="#525E2C"
                 changeMenuColorOnOpen={true}
-                colors={["#4A1F2A", "#FADDE0", "#FFFFFF", "#E8B7C4", "#4A1F2A"]}
-                accentColor="#D86B8F"
+                colors={["#525E2C", "#F0F0EE", "#FFFFFF", "#909E8D", "#525E2C"]}
+                accentColor="#D1AB6D"
                 isFixed={true}
                 onMenuOpen={() => {}}
                 onMenuClose={() => {}}

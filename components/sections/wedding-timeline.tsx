@@ -43,7 +43,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     time: ceremonyTime,
     title: "Wedding Ceremony",
-    description: `Celebrate ${groomNickname} & ${brideNickname} as they say “I do.”`,
+    description: `Celebrate Christian & Kate as they say "I do."`,
     location: ceremonyVenue,
     icon: RingsIcon,
   },
@@ -57,7 +57,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     time: "Send-off",
     title: "Send-off",
-    description: `A warm send-off for ${groomNickname} & ${brideNickname} as they begin their new chapter together.`,
+    description: `A warm send-off for Christian & Kate as they begin their new chapter together.`,
     location: receptionVenue,
     icon: CarIcon,
     imageSrc: "/weddingTimeline/Send-off.png",
@@ -72,40 +72,42 @@ export function WeddingTimeline() {
     >
       {/* Header - matching details section style, sage motif */}
       <div className="relative z-10 text-center mb-6 sm:mb-9 md:mb-12 px-3 sm:px-4">
-        {/* Small label */}
-        <p
-          className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase text-white mb-2`}
-          style={{ textShadow: "0 2px 10px rgba(0,0,0,0.75)" }}
-        >
-          Day Schedule
-        </p>
+        {/* Glass effect container */}
+        <div className="backdrop-blur-md bg-[#909E8D]/25 border border-white/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+          {/* Small label */}
+          <p
+            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase text-white mb-2`}
+          >
+            Wedding Day Schedule
+          </p>
 
-        <h2 className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-1.5 sm:mb-3 md:mb-4 drop-shadow-[0_6px_24px_rgba(0,0,0,0.7)]">
-          Wedding Timeline
-        </h2>
+          <h2 className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal text-white mb-1.5 sm:mb-3 md:mb-4">
+            Our Wedding Timeline
+          </h2>
 
-        <p className="text-[11px] sm:text-sm md:text-base lg:text-lg text-white/95 max-w-xl mx-auto leading-relaxed px-2">
-          A glimpse of the moments we'll share throughout the day.
-        </p>
+          <p className="text-[11px] sm:text-sm md:text-base lg:text-lg text-white max-w-xl mx-auto leading-relaxed px-2">
+            Join Christian &amp; Kate as we celebrate our special day together.
+          </p>
 
-        {/* Simple divider */}
-        <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
-          <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#E9D5C3] to-transparent" />
-          <div className="w-1.5 h-1.5 bg-[#E9D5C3] rounded-full shadow-[0_0_12px_rgba(209,171,109,0.9)]" />
-          <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#E9D5C3] to-transparent" />
+          {/* Simple divider */}
+          <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
+            <div className="w-1.5 h-1.5 rounded-full bg-white/90" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-white/60 to-transparent" />
+          </div>
         </div>
       </div>
 
       {/* Timeline - improved desktop layout */}
       <div className="relative z-10 max-w-6xl mx-auto px-3 sm:px-5 lg:px-8">
         {/* Vertical timeline line - desktop */}
-        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#E0B4B1]/40 via-[#E9D5C3]/55 to-[#E0B4B1]/40 -translate-x-1/2 pointer-events-none">
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#909E8D]/40 via-[#E0CFB5]/55 to-[#909E8D]/40 -translate-x-1/2 pointer-events-none">
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#F0F0EE]" />
           <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#F0F0EE]" />
         </div>
 
         {/* Mobile timeline line */}
-        <div className="md:hidden absolute left-6 sm:left-7 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#E0B4B1]/45 via-[#E9D5C3]/60 to-[#E0B4B1]/45 pointer-events-none" />
+        <div className="md:hidden absolute left-6 sm:left-7 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#909E8D]/45 via-[#E0CFB5]/60 to-[#909E8D]/45 pointer-events-none" />
 
         <div className="space-y-4 sm:space-y-5 md:space-y-8 lg:space-y-10">
           {timelineEvents.map((event, index) => (
@@ -163,7 +165,7 @@ function TimelineItem({ event, index }: { event: TimelineEvent; index: number })
 function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: TimelineIcon; mobile?: boolean }) {
   return (
     <div
-      className={`rounded-lg sm:rounded-xl border border-[#F7E6CA]/60 bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300 ${
+      className={`rounded-lg sm:rounded-xl border border-[#E0CFB5]/60 bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg transition-all duration-300 ${
         mobile ? "p-3" : "p-4 sm:p-5 md:p-6 lg:p-7"
       } max-w-md`}
     >
@@ -171,10 +173,10 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
         {/* Time */}
         <div className="flex items-center gap-1.5">
           <Clock
-            className={`${mobile ? "w-3.5 h-3.5" : "w-4 h-4 md:w-5 md:h-5"} text-[#E0B4B1] flex-shrink-0`}
+            className={`${mobile ? "w-3.5 h-3.5" : "w-4 h-4 md:w-5 md:h-5"} text-[#909E8D] flex-shrink-0`}
           />
           <p
-            className={`${mobile ? "text-[10px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] text-[#E0B4B1] uppercase`}
+            className={`${mobile ? "text-[10px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] text-[#909E8D] uppercase`}
           >
             {event.time}
           </p>
@@ -201,10 +203,10 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
           <div
             className={`flex items-start gap-1.5 ${
               mobile ? "pt-1.5" : "pt-2 md:pt-3"
-            } border-t border-[#F7E6CA]/70`}
+            } border-t border-[#E0CFB5]/70`}
           >
             <MapPin
-              className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} text-[#E0B4B1] mt-0.5 flex-shrink-0`}
+              className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} text-[#909E8D] mt-0.5 flex-shrink-0`}
             />
             <p className={`${mobile ? "text-[10px]" : "text-xs md:text-sm"} text-[#37413A]/80 leading-relaxed`}>
               {event.location}
@@ -229,7 +231,7 @@ function IconBadge({
     <div
       className={`${
         mobile ? "w-10 h-10" : "w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20"
-      } rounded-full border-2 border-[#F7E6CA]/70 bg-gradient-to-br from-white to-[#F0F0EE] flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300`}
+      } rounded-full border-2 border-[#E0CFB5]/70 bg-gradient-to-br from-white to-[#F0F0EE] flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300`}
     >
       {imageSrc ? (
         <Image
@@ -254,7 +256,7 @@ function IconBadge({
 
 /* Hand-drawn–style timeline icons (sage green line art) */
 
-const iconStroke = "#E0B4B1"
+const iconStroke = "#909E8D"
 
 function GuestsIcon(props: React.SVGProps<SVGSVGElement>) {
   return (

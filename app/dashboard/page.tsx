@@ -1131,10 +1131,10 @@ export default function DashboardPage() {
         </div>
 
         {/* Guest List */}
-        <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#F7E6CA]/60 overflow-hidden">
+        <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
-              <thead className="bg-[#F7E6CA]/60">
+              <thead className="bg-[#E0CFB5]/60">
                 <tr>
                   <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Name</th>
                   <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Email</th>
@@ -1149,7 +1149,7 @@ export default function DashboardPage() {
                   <th className="text-center px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Actions</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-[#F7E6CA]/40">
+              <tbody className="divide-y divide-[#E0CFB5]/40">
                 {filteredGuests.length === 0 ? (
                   <tr>
                     <td colSpan={6} className="px-6 py-12 text-center text-[#2F3724]/60 font-sans">
@@ -1165,7 +1165,7 @@ export default function DashboardPage() {
                   </tr>
                 ) : (
                   filteredGuests.map((guest, index) => (
-                    <tr key={index} className="hover:bg-[#F7E6CA]/20 transition-colors bg-[#FDF7EF]">
+                    <tr key={index} className="hover:bg-[#E0CFB5]/20 transition-colors bg-[#FDF7EF]">
                       <td className="px-6 py-4 font-medium text-[#2F3724] font-sans">{guest.Name}</td>
                       <td className="px-6 py-4 text-[#2F3724]/70 font-sans">
                         {guest.Email && guest.Email !== "Pending" ? guest.Email : "-"}
@@ -1209,7 +1209,7 @@ export default function DashboardPage() {
                         <div className="flex items-center justify-center gap-2">
                           <button
                             onClick={() => handleEditClick(guest)}
-                            className="p-2 text-[#3D5033] hover:bg-[#F7E6CA]/30 rounded-lg transition-colors"
+                            className="p-2 text-[#3D5033] hover:bg-[#E0CFB5]/30 rounded-lg transition-colors"
                             title="Edit guest"
                           >
                             <Edit2 className="h-4 w-4" />
@@ -1242,7 +1242,7 @@ export default function DashboardPage() {
         {activeTab === "requests" && (
           <>
             {/* Search Section */}
-            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#F7E6CA]/60 mb-6">
+            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
                 <div className="flex-1 w-full">
                   <div className="relative">
@@ -1252,7 +1252,7 @@ export default function DashboardPage() {
                       value={searchRequestQuery}
                       onChange={(e) => setSearchRequestQuery(e.target.value)}
                       placeholder="Search requests by name or email..."
-                      className="w-full pl-10 pr-4 py-2 border-2 border-[#F7E6CA]/50 focus:border-[#E9D5C3] rounded-xl font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                      className="w-full pl-10 pr-4 py-2 border-2 border-[#E0CFB5]/50 focus:border-[#E0CFB5] rounded-xl font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                     />
                   </div>
                 </div>
@@ -1260,14 +1260,14 @@ export default function DashboardPage() {
 
               {/* Success/Error Messages */}
               {successMessage && (
-                <div className="bg-[#E9D5C3]/15 border-2 border-[#E9D5C3]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
+                <div className="bg-[#E0CFB5]/15 border-2 border-[#E0CFB5]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-[#3D5033]" />
                   <span className="text-[#2F3724] font-semibold text-sm">{successMessage}</span>
                 </div>
               )}
 
               {error && (
-                <div className="bg-[#E9D5C3]/15 border-2 border-[#E9D5C3]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
+                <div className="bg-[#E0CFB5]/15 border-2 border-[#E0CFB5]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
                   <AlertCircle className="h-5 w-5 text-[#3D5033]" />
                   <span className="text-[#2F3724] font-semibold text-sm">{error}</span>
                 </div>
@@ -1276,10 +1276,10 @@ export default function DashboardPage() {
             </div>
 
             {/* Requests List */}
-            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#F7E6CA]/60 overflow-hidden">
+            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-[#F7E6CA]/60">
+                  <thead className="bg-[#E0CFB5]/60">
                     <tr>
                       <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Name</th>
                       <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Email</th>
@@ -1294,7 +1294,7 @@ export default function DashboardPage() {
                       <th className="text-center px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#F7E6CA]/40">
+                  <tbody className="divide-y divide-[#E0CFB5]/40">
                     {filteredRequests.length === 0 ? (
                       <tr>
                         <td colSpan={6} className="px-6 py-12 text-center text-[#2F3724]/60 font-sans">
@@ -1310,7 +1310,7 @@ export default function DashboardPage() {
                       </tr>
                     ) : (
                       filteredRequests.map((request, index) => (
-                        <tr key={index} className="hover:bg-[#F7E6CA]/20 transition-colors bg-[#FDF7EF]">
+                        <tr key={index} className="hover:bg-[#E0CFB5]/20 transition-colors bg-[#FDF7EF]">
                           <td className="px-6 py-4 font-medium text-[#2F3724] font-sans">{request.Name}</td>
                           <td className="px-6 py-4 text-[#2F3724]/70 font-sans">
                             {request.Email && request.Email !== "Pending" ? request.Email : "-"}
@@ -1319,7 +1319,7 @@ export default function DashboardPage() {
                             {request.Phone || "-"}
                           </td>
                           <td className="px-6 py-4 text-center">
-                            <span className="inline-flex items-center justify-center px-3 py-1.5 bg-[#F7E6CA]/70 text-[#2F3724] rounded-full text-sm font-bold min-w-[3.5rem] border border-[#E9D5C3]/70">
+                            <span className="inline-flex items-center justify-center px-3 py-1.5 bg-[#E0CFB5]/70 text-[#2F3724] rounded-full text-sm font-bold min-w-[3.5rem] border border-[#E0CFB5]/70">
                               {request?.Guest !== undefined && request?.Guest !== null && request?.Guest !== '' 
                                 ? (parseInt(String(request.Guest)) || 1) 
                                 : 1}
@@ -1332,7 +1332,7 @@ export default function DashboardPage() {
                             <div className="flex items-center justify-center gap-2">
                               <button
                                 onClick={() => handleAddRequestToGuestListClick(request)}
-                                className="px-4 py-2 bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black rounded-lg transition-colors font-semibold text-sm flex items-center gap-2 shadow-md hover:shadow-lg border border-[#F0F0EE]/60"
+                                className="px-4 py-2 bg-[#909E8D] hover:bg-[#A5B4A3] text-black rounded-lg transition-colors font-semibold text-sm flex items-center gap-2 shadow-md hover:shadow-lg border border-[#F0F0EE]/60"
                                 title="Add to guest list"
                               >
                                 <UserCheck className="h-4 w-4" />
@@ -1366,7 +1366,7 @@ export default function DashboardPage() {
         {activeTab === "entourage" && (
           <>
             {/* Search Section */}
-            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#F7E6CA]/60 mb-6">
+            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
                 <div className="flex-1 w-full">
                   <div className="relative">
@@ -1376,7 +1376,7 @@ export default function DashboardPage() {
                       value={searchEntourageQuery}
                       onChange={(e) => setSearchEntourageQuery(e.target.value)}
                       placeholder="Search entourage by name, role, or email..."
-                      className="w-full pl-10 pr-4 py-2 border-2 border-[#F7E6CA]/50 focus:border-[#E9D5C3] rounded-xl font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                      className="w-full pl-10 pr-4 py-2 border-2 border-[#E0CFB5]/50 focus:border-[#E0CFB5] rounded-xl font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                     />
                   </div>
                 </div>
@@ -1387,7 +1387,7 @@ export default function DashboardPage() {
                     setEntourageFormData({ Name: "", RoleCategory: "", RoleTitle: "", Email: "" })
                     setShowEntourageModal(true)
                   }}
-                className="bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F0F0EE]/60"
+                className="bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F0F0EE]/60"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Add Member
@@ -1396,14 +1396,14 @@ export default function DashboardPage() {
 
               {/* Success/Error Messages */}
               {successMessage && (
-                <div className="bg-[#E9D5C3]/15 border-2 border-[#E9D5C3]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
+                <div className="bg-[#E0CFB5]/15 border-2 border-[#E0CFB5]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-[#3D5033]" />
                   <span className="text-[#2F3724] font-semibold text-sm">{successMessage}</span>
                 </div>
               )}
 
               {error && (
-                <div className="bg-[#E9D5C3]/15 border-2 border-[#E9D5C3]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
+                <div className="bg-[#E0CFB5]/15 border-2 border-[#E0CFB5]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
                   <AlertCircle className="h-5 w-5 text-[#3D5033]" />
                   <span className="text-[#2F3724] font-semibold text-sm">{error}</span>
                 </div>
@@ -1413,10 +1413,10 @@ export default function DashboardPage() {
             </div>
 
             {/* Entourage List */}
-            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#F7E6CA]/60 overflow-hidden">
+            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-[#F7E6CA]/60">
+                  <thead className="bg-[#E0CFB5]/60">
                     <tr>
                       <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Name</th>
                       <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Role Category</th>
@@ -1425,7 +1425,7 @@ export default function DashboardPage() {
                       <th className="text-center px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#F7E6CA]/40">
+                  <tbody className="divide-y divide-[#E0CFB5]/40">
                     {filteredEntourage.length === 0 ? (
                       <tr>
                         <td colSpan={5} className="px-6 py-12 text-center text-[#2F3724]/60 font-sans">
@@ -1441,7 +1441,7 @@ export default function DashboardPage() {
                       </tr>
                     ) : (
                       filteredEntourage.map((member, index) => (
-                        <tr key={index} className="hover:bg-[#F7E6CA]/20 transition-colors bg-[#FDF7EF]">
+                        <tr key={index} className="hover:bg-[#E0CFB5]/20 transition-colors bg-[#FDF7EF]">
                           <td className="px-6 py-4 font-medium text-[#2F3724] font-sans">{member.Name}</td>
                           <td className="px-6 py-4 text-[#2F3724]/70 font-sans">
                             {member.RoleCategory || "-"}
@@ -1456,7 +1456,7 @@ export default function DashboardPage() {
                             <div className="flex items-center justify-center gap-2">
                               <button
                                 onClick={() => handleEditEntourageClick(member)}
-                                className="p-2 text-[#3D5033] hover:bg-[#F7E6CA]/30 rounded-lg transition-colors"
+                                className="p-2 text-[#3D5033] hover:bg-[#E0CFB5]/30 rounded-lg transition-colors"
                                 title="Edit member"
                               >
                                 <Edit2 className="h-4 w-4" />
@@ -1489,7 +1489,7 @@ export default function DashboardPage() {
         {activeTab === "principalsponsor" && (
           <>
             {/* Search Section */}
-            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#F7E6CA]/60 mb-6">
+            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
                 <div className="flex-1 w-full">
                   <div className="relative">
@@ -1499,7 +1499,7 @@ export default function DashboardPage() {
                       value={searchPrincipalSponsorQuery}
                       onChange={(e) => setSearchPrincipalSponsorQuery(e.target.value)}
                       placeholder="Search by name..."
-                      className="w-full pl-10 pr-4 py-2 border-2 border-[#F7E6CA]/50 focus:border-[#E9D5C3] rounded-xl font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                      className="w-full pl-10 pr-4 py-2 border-2 border-[#E0CFB5]/50 focus:border-[#E0CFB5] rounded-xl font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                     />
                   </div>
                 </div>
@@ -1509,7 +1509,7 @@ export default function DashboardPage() {
                     setPrincipalSponsorFormData({ MalePrincipalSponsor: "", FemalePrincipalSponsor: "" })
                     setShowPrincipalSponsorModal(true)
                   }}
-                className="bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F0F0EE]/60"
+                className="bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F0F0EE]/60"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Add Sponsors
@@ -1518,14 +1518,14 @@ export default function DashboardPage() {
 
               {/* Success/Error Messages */}
               {successMessage && (
-                <div className="bg-[#E9D5C3]/15 border-2 border-[#E9D5C3]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
+                <div className="bg-[#E0CFB5]/15 border-2 border-[#E0CFB5]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
                   <CheckCircle className="h-5 w-5 text-[#3D5033]" />
                   <span className="text-[#2F3724] font-semibold text-sm">{successMessage}</span>
                 </div>
               )}
 
               {error && (
-                <div className="bg-[#E9D5C3]/15 border-2 border-[#E9D5C3]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
+                <div className="bg-[#E0CFB5]/15 border-2 border-[#E0CFB5]/60 rounded-xl p-3 mb-4 flex items-center gap-2">
                   <AlertCircle className="h-5 w-5 text-[#3D5033]" />
                   <span className="text-[#2F3724] font-semibold text-sm">{error}</span>
                 </div>
@@ -1534,17 +1534,17 @@ export default function DashboardPage() {
             </div>
 
             {/* PrincipalSponsor List */}
-            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#F7E6CA]/60 overflow-hidden">
+            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
-                  <thead className="bg-[#F7E6CA]/60">
+                  <thead className="bg-[#E0CFB5]/60">
                     <tr>
                       <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Male Principal Sponsor</th>
                       <th className="text-left px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Female Principal Sponsor</th>
                       <th className="text-center px-6 py-4 text-sm font-bold text-[#2F3724] font-sans">Actions</th>
                     </tr>
                   </thead>
-                  <tbody className="divide-y divide-[#F7E6CA]/40">
+                  <tbody className="divide-y divide-[#E0CFB5]/40">
                     {filteredPrincipalSponsors.length === 0 ? (
                       <tr>
                         <td colSpan={3} className="px-6 py-12 text-center text-[#2F3724]/60 font-sans">
@@ -1560,7 +1560,7 @@ export default function DashboardPage() {
                       </tr>
                     ) : (
                       filteredPrincipalSponsors.map((sponsor, index) => (
-                        <tr key={index} className="hover:bg-[#F7E6CA]/20 transition-colors bg-[#FDF7EF]">
+                        <tr key={index} className="hover:bg-[#E0CFB5]/20 transition-colors bg-[#FDF7EF]">
                           <td className="px-6 py-4 font-medium text-[#2F3724] font-sans">{sponsor.MalePrincipalSponsor}</td>
                           <td className="px-6 py-4 text-[#2F3724]/70 font-sans">
                             {sponsor.FemalePrincipalSponsor || "-"}
@@ -1569,7 +1569,7 @@ export default function DashboardPage() {
                             <div className="flex items-center justify-center gap-2">
                               <button
                                 onClick={() => handleEditPrincipalSponsorClick(sponsor)}
-                                className="p-2 text-[#3D5033] hover:bg-[#F7E6CA]/30 rounded-lg transition-colors"
+                                className="p-2 text-[#3D5033] hover:bg-[#E0CFB5]/30 rounded-lg transition-colors"
                                 title="Edit sponsors"
                               >
                                 <Edit2 className="h-4 w-4" />
@@ -1695,13 +1695,13 @@ function AddToGuestListModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-md bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#F7E6CA]/70">
-        <div className="sticky top-0 bg-[#F7E6CA]/70 px-6 py-4 border-b border-[#E9D5C3]/70 rounded-t-2xl">
+      <div className="w-full max-w-md bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
+        <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">Add to Guest List</h3>
             <button
               onClick={onCancel}
-              className="p-2 hover:bg-[#E9D5C3]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
+              className="p-2 hover:bg-[#E0CFB5]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
             >
               <XCircle className="h-5 w-5" />
             </button>
@@ -1716,14 +1716,14 @@ function AddToGuestListModal({
             </p>
           </div>
           
-          <div className="bg-[#F5F0ED] rounded-xl p-4 mb-6 border border-[#F7E6CA]/70">
+          <div className="bg-[#F5F0ED] rounded-xl p-4 mb-6 border border-[#E0CFB5]/70">
             <p className="text-sm font-semibold text-[#2F3724] mb-2 font-sans">Request Details:</p>
             <div className="space-y-2 text-sm text-[#2F3724]/80 font-sans">
               <div><span className="font-medium">Email:</span> {request.Email || "-"}</div>
               {request.Phone && <div><span className="font-medium">Phone:</span> {request.Phone}</div>}
               <div><span className="font-medium">Guests:</span> {guestCount}</div>
               {request.Message && (
-                <div className="mt-2 pt-2 border-t border-[#E9D5C3]/60">
+                <div className="mt-2 pt-2 border-t border-[#E0CFB5]/60">
                   <span className="font-medium">Message:</span>
                   <p className="italic mt-1">{request.Message}</p>
                 </div>
@@ -1739,7 +1739,7 @@ function AddToGuestListModal({
             <Button
               onClick={onConfirm}
               disabled={isLoading}
-              className="flex-1 bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -1832,15 +1832,15 @@ function EntourageModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#F7E6CA]/70 max-h-[90vh] overflow-y-auto">
-        <div className="sticky top-0 bg-[#F7E6CA]/70 px-6 py-4 border-b border-[#E9D5C3]/70 rounded-t-2xl">
+      <div className="w-full max-w-xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
+        <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">
               {editing ? 'Edit Entourage Member' : 'Add New Entourage Member'}
             </h3>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-[#E9D5C3]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
+              className="p-2 hover:bg-[#E0CFB5]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
             >
               <XCircle className="h-5 w-5" />
             </button>
@@ -1854,7 +1854,7 @@ function EntourageModal({
                 type="text"
                 value={formData.Name}
                 onChange={(e) => setFormData({ ...formData, Name: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 required
               />
             </div>
@@ -1872,7 +1872,7 @@ function EntourageModal({
                   value={formData.RoleCategory}
                   onChange={(e) => setFormData({ ...formData, RoleCategory: e.target.value, RoleTitle: "" })}
                   placeholder="e.g., Wedding Party, Family"
-                  className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                  className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 />
                 <datalist id="role-category-options">
                   {uniqueRoleCategories.map((category, index) => (
@@ -1895,7 +1895,7 @@ function EntourageModal({
                   value={formData.RoleTitle}
                   onChange={(e) => setFormData({ ...formData, RoleTitle: e.target.value })}
                   placeholder="e.g., Best Man, Matron of Honor"
-                  className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                  className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 />
                 {formData.RoleCategory && uniqueRoleTitles.length > 0 && (
                   <datalist id="role-title-options">
@@ -1913,7 +1913,7 @@ function EntourageModal({
                 value={formData.Email}
                 onChange={(e) => setFormData({ ...formData, Email: e.target.value })}
                 placeholder="email@example.com"
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
               />
             </div>
           </div>
@@ -1921,7 +1921,7 @@ function EntourageModal({
             <Button
               onClick={onSave}
               disabled={isLoading}
-              className="flex-1 bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -1964,15 +1964,15 @@ function PrincipalSponsorModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#F7E6CA]/70 max-h-[90vh] overflow-y-auto">
-        <div className="sticky top-0 bg-[#F7E6CA]/70 px-6 py-4 border-b border-[#E9D5C3]/70 rounded-t-2xl">
+      <div className="w-full max-w-xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
+        <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">
               {editing ? "Edit Principal Sponsors" : "Add New Principal Sponsors"}
             </h3>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-[#E9D5C3]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
+              className="p-2 hover:bg-[#E0CFB5]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
             >
               <XCircle className="h-5 w-5" />
             </button>
@@ -1988,7 +1988,7 @@ function PrincipalSponsorModal({
                 type="text"
                 value={formData.MalePrincipalSponsor}
                 onChange={(e) => setFormData({ ...formData, MalePrincipalSponsor: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 placeholder="Enter male principal sponsor name"
                 required
                 autoFocus
@@ -2002,7 +2002,7 @@ function PrincipalSponsorModal({
                 type="text"
                 value={formData.FemalePrincipalSponsor}
                 onChange={(e) => setFormData({ ...formData, FemalePrincipalSponsor: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 placeholder="Enter female principal sponsor name (optional)"
               />
             </div>
@@ -2011,7 +2011,7 @@ function PrincipalSponsorModal({
             <Button
               onClick={onSave}
               disabled={isLoading || !formData.MalePrincipalSponsor.trim()}
-              className="flex-1 bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -2052,13 +2052,13 @@ function AddGuestModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-md bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#F7E6CA]/70">
-        <div className="sticky top-0 bg-[#F7E6CA]/70 px-6 py-4 border-b border-[#E9D5C3]/70 rounded-t-2xl">
+      <div className="w-full max-w-md bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
+        <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">Add New Guest</h3>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-[#E9D5C3]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
+              className="p-2 hover:bg-[#E0CFB5]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
             >
               <XCircle className="h-5 w-5" />
             </button>
@@ -2076,7 +2076,7 @@ function AddGuestModal({
               type="text"
               value={formData.Name}
               onChange={(e) => setFormData({ ...formData, Name: e.target.value })}
-              className="w-full px-4 py-3 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+              className="w-full px-4 py-3 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
               placeholder="Enter guest name"
               required
               autoFocus
@@ -2091,7 +2091,7 @@ function AddGuestModal({
             <Button
               onClick={onSave}
               disabled={isLoading || !formData.Name.trim()}
-              className="flex-1 bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -2134,13 +2134,13 @@ function EditGuestModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-2xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#F7E6CA]/70 max-h-[90vh] overflow-y-auto">
-        <div className="sticky top-0 bg-[#F7E6CA]/70 px-6 py-4 border-b border-[#E9D5C3]/70 rounded-t-2xl">
+      <div className="w-full max-w-2xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
+        <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">Edit Guest</h3>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-[#E9D5C3]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
+              className="p-2 hover:bg-[#E0CFB5]/40 rounded-lg transition-colors text-[#2F3724]/70 hover:text-[#2F3724]"
             >
               <XCircle className="h-5 w-5" />
             </button>
@@ -2156,7 +2156,7 @@ function EditGuestModal({
                 type="text"
                 value={formData.Name}
                 onChange={(e) => setFormData({ ...formData, Name: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 required
               />
             </div>
@@ -2168,7 +2168,7 @@ function EditGuestModal({
                 type="email"
                 value={formData.Email}
                 onChange={(e) => setFormData({ ...formData, Email: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
               />
             </div>
             <div>
@@ -2178,7 +2178,7 @@ function EditGuestModal({
               <select
                 value={formData.RSVP}
                 onChange={(e) => setFormData({ ...formData, RSVP: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black bg-white transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black bg-white transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20"
                 required
               >
                 <option value="">Select status</option>
@@ -2196,7 +2196,7 @@ function EditGuestModal({
                 min="1"
                 value={formData.Guest || "1"}
                 onChange={(e) => setFormData({ ...formData, Guest: e.target.value || "1" })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 placeholder="1"
                 required
               />
@@ -2208,7 +2208,7 @@ function EditGuestModal({
               <textarea
                 value={formData.Message}
                 onChange={(e) => setFormData({ ...formData, Message: e.target.value })}
-                className="w-full px-4 py-2 border-2 border-[#F7E6CA]/70 focus:border-[#E9D5C3] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E9D5C3]/20 bg-white"
+                className="w-full px-4 py-2 border-2 border-[#E0CFB5]/70 focus:border-[#E0CFB5] rounded-xl text-sm font-sans text-black placeholder:text-[#2F3724]/40 transition-all duration-300 focus:ring-4 focus:ring-[#E0CFB5]/20 bg-white"
                 rows={3}
               />
             </div>
@@ -2217,7 +2217,7 @@ function EditGuestModal({
             <Button
               onClick={onSave}
               disabled={isLoading}
-              className="flex-1 bg-[#E0B4B1] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -2243,16 +2243,16 @@ function ConfirmModal({ open, title, message, onCancel, onConfirm }: { open: boo
   if (!open) return null
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-sm bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#F7E6CA]/70">
-        <div className="px-5 py-4 border-b border-[#E9D5C3]/70">
+      <div className="w-full max-w-sm bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
+        <div className="px-5 py-4 border-b border-[#E0CFB5]/70">
           <h3 className="text-base sm:text-lg font-bold text-[#2F3724]">{title}</h3>
         </div>
         <div className="px-5 py-4 text-sm sm:text-base text-[#2F3724]/80">
           {message}
         </div>
-        <div className="px-5 py-4 flex justify-end gap-2 border-t border-[#E9D5C3]/70">
-          <button onClick={onCancel} className="px-4 py-2 text-sm rounded-lg border border-[#F7E6CA]/70 text-[#2F3724] hover:bg-[#E9D5C3]/40 transition-colors">Cancel</button>
-          <button onClick={onConfirm} className="px-4 py-2 text-sm rounded-lg bg-[#E0B4B1] text-black hover:bg-[#A5B4A3] transition-colors border border-[#2F3724]/40">Delete</button>
+        <div className="px-5 py-4 flex justify-end gap-2 border-t border-[#E0CFB5]/70">
+          <button onClick={onCancel} className="px-4 py-2 text-sm rounded-lg border border-[#E0CFB5]/70 text-[#2F3724] hover:bg-[#E0CFB5]/40 transition-colors">Cancel</button>
+          <button onClick={onConfirm} className="px-4 py-2 text-sm rounded-lg bg-[#909E8D] text-black hover:bg-[#A5B4A3] transition-colors border border-[#2F3724]/40">Delete</button>
         </div>
       </div>
     </div>

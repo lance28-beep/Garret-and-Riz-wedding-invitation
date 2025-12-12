@@ -74,17 +74,17 @@ export function FAQ() {
   return (
     <Section
       id="faq"
-      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#D2A4A4]"
+      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]"
     >
-      {/* Background elements with elegant sage green motif (aligned with narrative section) */}
+      {/* Wedding gradient background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Vertical sage gradients to frame the FAQ */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#D3B9A2]/92 via-[#D2A4A4]/78 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#D3B9A2]/95 via-[#D2A4A4]/72 to-transparent" />
-        {/* Soft radial light in warm neutrals */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(224,207,181,0.28),transparent_55%)] opacity-90" />
-        {/* Subtle diagonal wash of muted sage */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#6E7A61]/24 via-transparent to-[#F7E6CA]/12 mix-blend-soft-light" />
+        {/* Main gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]" />
+        {/* Radial gradient accents */}
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
+        {/* Soft radial light */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(240,240,238,0.25),transparent_70%)]" />
       </div>
 
       {/* Section Header */}
@@ -99,7 +99,7 @@ export function FAQ() {
 
         <h2
           className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-white mb-1.5 sm:mb-3 md:mb-4"
-          style={{ textShadow: "0 4px 18px rgba(0,0,0,0.85)" }}
+          style={{ textShadow: "0 4px 18px rgba(0,0,0,0.9)" }}
         >
           Frequently Asked Questions
         </h2>
@@ -113,9 +113,9 @@ export function FAQ() {
       </div>
 
       {/* FAQ content */}
-      <div className="relative z-30 max-w-4xl mx-auto px-3 sm:px-5">
+      <div className="relative z-10 max-w-4xl mx-auto px-3 sm:px-5">
         {/* Main card */}
-        <div className="relative bg-white/10 backdrop-blur-md border border-[#F7E6CA]/60 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.45)] overflow-hidden">
+        <div className="relative bg-white/10 backdrop-blur-md border border-white/25 rounded-lg sm:rounded-xl md:rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.45)] overflow-hidden">
           {/* FAQ items */}
           <div className="relative p-2.5 sm:p-4 md:p-5 lg:p-6">
             <div className="space-y-1.5 sm:space-y-2 md:space-y-3">
@@ -125,15 +125,15 @@ export function FAQ() {
                 return (
                   <div
                     key={index}
-                    className="rounded-lg sm:rounded-xl border border-[#F7E6CA]/40 bg-white/5 backdrop-blur-sm hover:border-[#F7E6CA]/70 hover:bg-white/10 transition-all duration-300 hover:shadow-md overflow-hidden"
+                    className="rounded-lg sm:rounded-xl border border-white/40 bg-white/5 backdrop-blur-sm hover:border-white/70 hover:bg-white/10 transition-all duration-300 hover:shadow-md overflow-hidden"
                   >
                     <button
                       onClick={() => toggleItem(index)}
-                      className="group w-full px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 flex items-center justify-between text-left outline-none focus-visible:ring-2 focus-visible:ring-[#FDECEF]/50 focus-visible:ring-offset-2 transition-colors"
+                      className="group w-full px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 flex items-center justify-between text-left outline-none focus-visible:ring-2 focus-visible:ring-white/50 focus-visible:ring-offset-2 transition-colors"
                       aria-expanded={isOpen}
                       aria-controls={contentId}
                     >
-                      <span className={`${cormorant.className} font-semibold text-white pr-2 sm:pr-3 md:pr-4 text-xs sm:text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed transition-colors duration-200 group-hover:text-[#FDECEF]`}>
+                      <span className={`${cormorant.className} font-semibold text-white pr-2 sm:pr-3 md:pr-4 text-xs sm:text-sm md:text-base lg:text-lg leading-snug sm:leading-relaxed transition-colors duration-200 group-hover:text-white/90`}>
                         {item.question}
                       </span>
                       <ChevronDown
@@ -151,13 +151,13 @@ export function FAQ() {
                       }`}
                     >
                       <div className="overflow-hidden">
-                        <div className="px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-white/5 border-t border-[#F7E6CA]/30">
+                        <div className="px-2.5 sm:px-3 md:px-4 lg:px-5 py-2 sm:py-2.5 md:py-3 lg:py-4 bg-white/5 border-t border-white/30">
                           {item.answer.includes("[RSVP_LINK]") ? (
                             <p className={`${cormorant.className} text-white font-semibold leading-relaxed sm:leading-loose text-sm sm:text-base md:text-lg lg:text-xl whitespace-pre-line tracking-wide`}>
                               {item.answer.split("[RSVP_LINK]")[0]}
                               <a 
                                 href="#guest-list" 
-                                className="text-white underline font-bold hover:text-[#F0F0EE] transition-colors"
+                                className="text-white underline font-bold hover:text-white/90 transition-colors"
                                 onClick={(e) => {
                                   e.preventDefault()
                                   document.getElementById('guest-list')?.scrollIntoView({ behavior: 'smooth' })

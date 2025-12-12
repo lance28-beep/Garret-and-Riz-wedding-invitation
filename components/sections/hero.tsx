@@ -6,21 +6,19 @@ import { Cormorant_Garamond, Cinzel } from "next/font/google"
 import { siteConfig } from "@/content/site"
 
 const desktopImages = [
-  "/desktop-background/couple (1).jpg",
-  "/desktop-background/couple (2).jpg",
-  "/desktop-background/couple (3).jpg",
-  "/desktop-background/couple (4).jpg",
-  "/desktop-background/couple (5).jpg",
+  "/desktop-background/couple (1).jpeg",
+  "/desktop-background/couple (2).jpeg",
+  "/desktop-background/couple (3).jpeg",
+  "/desktop-background/couple (4).jpeg",
+  "/desktop-background/couple (5).jpeg",
 
 ]
 
 const mobileImages = [
-  "/mobile-background/couple (1).jpg",
-  "/mobile-background/couple (2).jpg",
-  "/mobile-background/couple (3).jpg",
-  "/mobile-background/couple (4).jpg",
-  "/mobile-background/couple (5).jpg",
-  "/mobile-background/couple (6).jpg",
+  "/mobile-background/couple (6).jpeg",
+  "/mobile-background/couple (7).jpeg",
+  "/mobile-background/couple (8).jpeg",
+
 ]
 
 const SHOW_BUTTERFLIES = false
@@ -111,7 +109,7 @@ export function Hero() {
     : "THU"
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#FADDE0]">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#F0F0EE]">
       <div className="absolute inset-0 w-full h-full">
         {imagesLoaded && backgroundImages.map((image, index) => (
           <div
@@ -128,9 +126,9 @@ export function Hero() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#D3B9A2]/90 via-[#D3B9A2]/70 to-transparent z-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#D3B9A2]/75 z-0" />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(224,207,181,0.3),transparent_55%)] mix-blend-screen" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#909E8D]/90 via-[#909E8D]/70 to-transparent z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#909E8D]/75 z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(144,158,141,0.3),transparent_55%)] mix-blend-screen" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(240,240,238,0.28),transparent_35%)] opacity-70 animate-[pulse_9s_ease-in-out_infinite]" />
       </div>
 
@@ -583,37 +581,37 @@ export function Hero() {
             <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch">
             <a
               href="#guest-list"
-              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D2A4A4]/70`}
+              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#525E2C]/70`}
               style={{
-                backgroundColor: "#D2A4A4",
+                backgroundColor: "#525E2C",
                 boxShadow: "0 10px 24px rgba(0,0,0,0.35)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#C79090";
+                e.currentTarget.style.backgroundColor = "#909E8D";
                 e.currentTarget.style.boxShadow = "0 12px 28px rgba(0,0,0,0.4)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#D2A4A4";
+                e.currentTarget.style.backgroundColor = "#525E2C";
                 e.currentTarget.style.boxShadow = "0 10px 24px rgba(0,0,0,0.35)";
               }}
             >
-              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-[0.65rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.32em] sm:tracking-[0.36em] text-[#2F1C1C] font-semibold transition-all duration-300" style={{ textShadow: "0 1px 6px rgba(255,255,255,0.6)" }}>
+              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-[0.65rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.32em] sm:tracking-[0.36em] text-[#F0F0EE] font-semibold transition-all duration-300" style={{ textShadow: "0 1px 6px rgba(82,94,44,0.6)" }}>
                 Confirm Attendance
               </span>
             </a>
             <a
               href="#messages"
-              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#FADDE0]/60`}
+              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F0F0EE]/60`}
               style={{
-                backgroundColor: "#FADDE0",
+                backgroundColor: "#F0F0EE",
                 boxShadow: "0 10px 24px rgba(0,0,0,0.35)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#F3C5CA";
+                e.currentTarget.style.backgroundColor = "#E0CFB5";
                 e.currentTarget.style.boxShadow = "0 12px 28px rgba(0,0,0,0.4)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#FADDE0";
+                e.currentTarget.style.backgroundColor = "#F0F0EE";
                 e.currentTarget.style.boxShadow = "0 10px 24px rgba(0,0,0,0.35)";
               }}
             >

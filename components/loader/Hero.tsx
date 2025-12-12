@@ -7,19 +7,19 @@ interface HeroProps {
 }
 
 const desktopImages: string[] = [
-  '/desktop-background/couple (1).jpg',
-  '/desktop-background/couple (2).jpg',
-  '/desktop-background/couple (3).jpg',
-  '/desktop-background/couple (4).jpg',
-  '/desktop-background/couple (5).jpg',
+  '/desktop-background/couple (1).jpeg',
+  '/desktop-background/couple (2).jpeg',
+  '/desktop-background/couple (3).jpeg',
+  '/desktop-background/couple (4).jpeg',
+  '/desktop-background/couple (5).jpeg',
 ];
 
 const mobileImages: string[] = [
-  '/mobile-background/couple (1).jpg',
-  '/mobile-background/couple (2).jpg',
-  '/mobile-background/couple (3).jpg',
-  '/mobile-background/couple (4).jpg',
-  '/mobile-background/couple (5).jpg',
+  '/mobile-background/couple (6).jpeg',
+  '/mobile-background/couple (2).jpeg',
+  '/mobile-background/couple (3).jpeg',
+  '/mobile-background/couple (4).jpeg',
+  '/mobile-background/couple (5).jpeg',
 ];
 
 export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
@@ -62,7 +62,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         ))}
 
         {/* Soft overlay tint */}
-        <div className="absolute inset-0 bg-[#FADDE0]/45 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#F0F0EE]/45 pointer-events-none" />
 
       </div>
 
@@ -71,12 +71,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         
         {/* Top Logo/Monogram */}
         <FadeIn show={visible} delay={300} className="mb-auto mt-8">
-          <div className="w-16 h-24 border border-[#E0B4B1]/45 rounded-[2rem] flex items-center justify-center backdrop-blur-sm bg-[#F7E6CA]/55">
+          <div className="w-16 h-24 border border-[#909E8D]/45 rounded-[2rem] flex items-center justify-center backdrop-blur-sm bg-[#525E2C]">
             <span
               className="text-2xl font-bold text-white"
               style={{ fontFamily: '"Cinzel", serif', fontWeight: 700 }}
             >
-              A & J
+              CK
             </span>
           </div>
         </FadeIn>
@@ -113,7 +113,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           <FadeIn show={visible} delay={1500}>
           <button 
             onClick={onOpen}
-            className="group relative px-10 py-4 bg-[#D2A4A4] text-[#fffaf3] font-serif text-sm tracking-[0.2em] uppercase transition-all duration-500 hover:bg-[#E0B4B1] shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 rounded-sm overflow-hidden"
+            className="group relative px-10 py-4 bg-[#525E2C] text-[#F0F0EE] font-serif text-sm tracking-[0.2em] uppercase transition-all duration-500 hover:bg-[#909E8D] shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 rounded-sm overflow-hidden"
           >
             <span
               className="relative z-10 text-white"

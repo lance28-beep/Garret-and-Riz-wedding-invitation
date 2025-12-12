@@ -160,7 +160,7 @@ export function Entourage() {
         className={`relative flex flex-col ${containerAlign} justify-center py-1 sm:py-1.5 md:py-2 leading-snug sm:leading-relaxed group/item transition-all duration-300 hover:scale-[1.02] sm:hover:scale-[1.03]`}
       >
         {/* Hover highlight effect */}
-        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#F7E6CA]/35 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 rounded-md" />
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#E0CFB5]/35 to-transparent opacity-0 group-hover/item:opacity-100 transition-opacity duration-300 rounded-md" />
 
         <p
           className={`relative text-[#243127] text-[11px] sm:text-[13px] md:text-sm lg:text-base font-semibold ${textAlign} group-hover/item:text-[#1A231C] transition-all duration-300`}
@@ -224,17 +224,17 @@ export function Entourage() {
     <section
       ref={sectionRef}
       id="entourage"
-      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-[#D2A4A4]"
+      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]"
     >
-      {/* Background elements matching the narrative section's sage motif */}
+      {/* Wedding gradient background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Vertical sage gradients to frame the entourage */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#D3B9A2]/92 via-[#D2A4A4]/78 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#D3B9A2]/95 via-[#D2A4A4]/72 to-transparent" />
-        {/* Soft radial light in warm neutrals */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(224,207,181,0.28),transparent_55%)] opacity-90" />
-        {/* Subtle diagonal wash of muted sage */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#6E7A61]/24 via-transparent to-[#F7E6CA]/12 mix-blend-soft-light" />
+        {/* Main gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]" />
+        {/* Radial gradient accents */}
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
+        {/* Soft radial light */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(240,240,238,0.25),transparent_70%)]" />
       </div>
 
       {/* Section Header */}
@@ -269,7 +269,7 @@ export function Entourage() {
         }`}
       >
         {/* Card with sage & champagne theme */}
-        <div className="relative bg-[#F7F5F1]/95 backdrop-blur-md rounded-xl sm:rounded-2xl overflow-hidden border border-[#F7E6CA]/80 shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-all duration-500 group">
+        <div className="relative bg-[#F7F5F1]/95 backdrop-blur-md rounded-xl sm:rounded-2xl overflow-hidden border border-[#E0CFB5]/80 shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-all duration-500 group">
           {/* Card content */}
           <div className="relative p-3 sm:p-6 md:p-8 z-10">
             {isLoading ? (

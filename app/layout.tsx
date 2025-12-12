@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   colorScheme: "light",
-  themeColor: "#D2A4A4",
+  themeColor: "#525E2C",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -163,7 +163,7 @@ export default function RootLayout({
       <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="color-scheme" content="light" />
-        <meta name="theme-color" content="#D2A4A4" />
+        <meta name="theme-color" content="#525E2C" />
         <meta name="format-detection" content="telephone=yes,email=no,address=no" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
