@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -24,27 +25,30 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
       }`}
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-[#909E8D]" />
+      <div className="absolute inset-0 bg-[#8498B0]" />
 
       <div className="relative flex flex-col items-center justify-center">
         <div className="relative flex items-center justify-center">
           {/* Glow halos */}
           <div className="absolute w-40 h-40 rounded-full bg-white/25 blur-3xl animate-pulse" />
-          <div className="absolute w-28 h-28 rounded-full bg-[#909E8D]/30 blur-2xl animate-ping" />
+          <div className="absolute w-28 h-28 rounded-full bg-[#8498B0]/30 blur-2xl animate-ping" />
 
           {/* Outer decorative rings */}
-          <div className="absolute w-32 h-32 rounded-full border border-[#525E2C]/70 animate-ping" />
-          <div className="absolute w-26 h-26 rounded-full border border-[#909E8D]/70 animate-[spin_7s_linear_infinite]" />
-          <div className="absolute w-22 h-22 rounded-full border-t-2 border-b-2 border-[#D1AB6D]/80 animate-[spin_12s_linear_infinite_reverse]" />
+          <div className="absolute w-32 h-32 rounded-full border border-[#8498B0]/70 animate-ping" />
+          <div className="absolute w-26 h-26 rounded-full border border-[#8498B0]/70 animate-[spin_7s_linear_infinite]" />
+          <div className="absolute w-22 h-22 rounded-full border-t-2 border-b-2 border-[#D2AC6E]/80 animate-[spin_12s_linear_infinite_reverse]" />
 
           {/* Monogram */}
           <div className="flex flex-col items-center justify-center z-10">
-            <span
-            className="text-3xl tracking-[0.35em] text-white drop-shadow-md"
-              style={{ fontFamily: '"Cinzel", serif', fontWeight: 700 }}
-            >
-              CK
-            </span>
+            <div className="relative w-24 h-24">
+              <Image
+                src="/monogram/NewMonogram.png"
+                alt="Monogram"
+                fill
+                className="object-contain brightness-0 invert drop-shadow-md"
+                priority
+              />
+            </div>
           </div>
         </div>
 

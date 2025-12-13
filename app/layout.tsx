@@ -7,8 +7,8 @@ import { siteConfig } from "@/content/site"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://christian-and-kate-invitation.netlify.app/"
 const canonicalUrl = siteUrl.replace(/\/$/, "")
-const desktopHero = "/Details/linkPreview.jpg"
-const mobileHero = "/Details/linkPreview.jpg"
+const desktopHero = "/Details/LinkPreview.jpg"
+const mobileHero = "/Details/LinkPreview.jpg"
 const eventImageUrl = `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
@@ -19,8 +19,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
   name: `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} Wedding`,
-  startDate: "2026-03-06T14:00:00+08:00",
-  endDate: "2026-03-06T22:00:00+08:00",
+  startDate: "2026-03-18T15:30:00+08:00",
+  endDate: "2026-03-18T22:00:00+08:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: [
@@ -85,7 +85,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   colorScheme: "light",
-  themeColor: "#525E2C",
+  themeColor: "#8498B0",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -163,7 +163,7 @@ export default function RootLayout({
       <head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="color-scheme" content="light" />
-        <meta name="theme-color" content="#525E2C" />
+        <meta name="theme-color" content="#8498B0" />
         <meta name="format-detection" content="telephone=yes,email=no,address=no" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -171,8 +171,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet" />
         <link rel="preload" as="image" href={mobileHero} media="(max-width: 767px)" />
         <link rel="preload" as="image" href={desktopHero} media="(min-width: 768px)" />
-        <link rel="preload" as="image" href="/Details/St. Augustine Parish Church.jpg" />
-        <link rel="preload" as="image" href="/Details/La Mariposa Tagaytay Events Place.jpg" />
+        <link rel="preload" as="image" href="/Details/Santuario-de-San-Vicente-de-Paul.jpg" />
+        <link rel="preload" as="image" href="/Details/Bulwagan-de-San-Vicente.jpg" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body

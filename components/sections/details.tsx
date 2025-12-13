@@ -67,10 +67,10 @@ export function Details() {
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.ceremony.location)}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.reception.location)}`
 
-  // Palettes (used only for color chips in attire card) - Warm blush motif
-  const sponsorPalette = ["#D1AB6D", "#909E8D", "#525E2C"]
-  const guestPalette = ["#909E8D", "#D1AB6D", "#E0CFB5", "#F0F0EE"]
-  const secondaryPalette = ["#F0F0EE", "#E0CFB5", "#E0CFB5", "#909E8D", "#D1AB6D"]
+  // Palettes (used only for color chips in attire card) - Blue-gray & tan motif
+  const sponsorPalette = ["#BFCDD8", "#8498B0", "#F1F1EF"]
+  const guestPalette = ["#BFCDD8", "#8498B0", "#D2AC6E", "#E0CFB5", "#F1F1EF"]
+  const secondaryPalette = ["#F1F1EF", "#E0CFB5", "#BFCDD8", "#8498B0", "#8498B0"]
 
   const openInMaps = (link: string) => {
     window.open(link, "_blank", "noopener,noreferrer")
@@ -79,17 +79,17 @@ export function Details() {
   return (
     <Section
       id="details"
-      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]"
+      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#8498B0] via-[#BFCDD8] to-[#8498B0]"
     >
       {/* Wedding gradient background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Main gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8498B0] via-[#BFCDD8] to-[#8498B0]" />
         {/* Radial gradient accents */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#8498B0]/90 via-[#BFCDD8]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#8498B0]/90 via-[#BFCDD8]/60 to-transparent" />
         {/* Soft radial light */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(240,240,238,0.25),transparent_70%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(241,241,239,0.25),transparent_70%)]" />
       </div>
 
       {/* Header */}
@@ -143,8 +143,8 @@ export function Details() {
               date: siteConfig.ceremony.date,
               time: siteConfig.ceremony.time,
               mapLink: ceremonyMapsLink,
-              gradient: "from-[#D1AB6D] via-[#525E2C] to-[#E0CFB5]",
-              image: "/Details/St. Joseph the Patriarch Parish.jpg",
+              gradient: "from-[#8498B0] via-[#8498B0] to-[#E0CFB5]",
+              image: "/Details/Santuario de San Vicente de Paul.jpg",
             },
             {
               key: "reception",
@@ -154,13 +154,13 @@ export function Details() {
               date: siteConfig.reception.date,
               time: siteConfig.reception.time,
               mapLink: receptionMapsLink,
-              gradient: "from-[#525E2C] via-[#909E8D] to-[#F0F0EE]",
-              image: "/Details/Golden Peak Hotel & Suites.jpg",
+              gradient: "from-[#8498B0] via-[#BFCDD8] to-[#F1F1EF]",
+              image: "/Details/Bulwagan de San Vicente.jpg",
             },
           ].map((info) => (
             <div
               key={info.key}
-              className="overflow-hidden rounded-xl sm:rounded-2xl border border-[#F0F0EE]/25 bg-gradient-to-b shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-transform duration-500 group hover:scale-[1.01]"
+              className="overflow-hidden rounded-xl sm:rounded-2xl border border-[#F1F1EF]/25 bg-gradient-to-b shadow-[0_20px_60px_rgba(0,0,0,0.45)] transition-transform duration-500 group hover:scale-[1.01]"
               style={{ backgroundImage: undefined }}
             >
               {/* Top image */}
@@ -173,7 +173,7 @@ export function Details() {
                   sizes="100vw"
                   priority
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t from-[#D1AB6D]/95 via-[#525E2C]/65 to-transparent`} />
+                <div className={`absolute inset-0 bg-gradient-to-t from-[#8498B0]/95 via-[#8498B0]/65 to-transparent`} />
                 <div className="absolute inset-0 flex flex-col justify-end px-3 sm:px-6 pb-3 sm:pb-6 text-white">
                   <p className="style-script-regular text-xl sm:text-2xl md:text-3xl font-normal leading-none drop-shadow-md">
                     {info.label}
@@ -185,17 +185,17 @@ export function Details() {
               </div>
 
               {/* Details panel */}
-              <div className="bg-[#F0F0EE]/95 text-[#D1AB6D] px-3 sm:px-6 py-4 sm:py-6 space-y-4 backdrop-blur-sm">
+              <div className="bg-[#F1F1EF]/95 text-[#8498B0] px-3 sm:px-6 py-4 sm:py-6 space-y-4 backdrop-blur-sm">
                 <div className="space-y-2.5">
                   <div className="space-y-1">
-                    <p className="text-xs sm:text-sm text-[#D1AB6D]/90 leading-relaxed">{info.location}</p>
+                    <p className="text-xs sm:text-sm text-[#8498B0]/90 leading-relaxed">{info.location}</p>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-2 text-left">
                     <div className="rounded-md border border-[#E0CFB5] bg-white/80 px-2.5 py-2 shadow-sm">
-                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#525E2C] uppercase mb-0.5">
+                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#8498B0] uppercase mb-0.5">
                         Date & Time
                       </p>
-                      <p className="text-sm sm:text-base font-bold text-[#D1AB6D]">
+                      <p className="text-sm sm:text-base font-bold text-[#8498B0]">
                         {info.key === "ceremony" 
                           ? `${info.date} at ${info.time}`
                           : `${info.date} - ${info.time}`
@@ -203,10 +203,10 @@ export function Details() {
                       </p>
                     </div>
                     <div className="rounded-md border border-[#E0CFB5] bg-white/80 px-2.5 py-2 shadow-sm">
-                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#525E2C] uppercase mb-0.5">
+                      <p className="text-[9px] sm:text-[10px] font-semibold tracking-[0.18em] text-[#8498B0] uppercase mb-0.5">
                         Venue
                       </p>
-                      <p className="text-sm sm:text-base font-bold text-[#D1AB6D]">{info.venue}</p>
+                      <p className="text-sm sm:text-base font-bold text-[#8498B0]">{info.venue}</p>
                     </div>
                   </div>
                 </div>
@@ -214,14 +214,14 @@ export function Details() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 sm:gap-3">
                   <button
                     onClick={() => openInMaps(info.mapLink)}
-                    className="flex items-center justify-center gap-1.5 rounded-lg bg-[#525E2C] text-white py-2.5 sm:py-3 shadow-lg hover:translate-y-[-2px] transition-all text-xs sm:text-sm font-semibold"
+                    className="flex items-center justify-center gap-1.5 rounded-lg bg-[#8498B0] text-white py-2.5 sm:py-3 shadow-lg hover:translate-y-[-2px] transition-all text-xs sm:text-sm font-semibold"
                   >
                     <Navigation className="w-4 h-4" />
                     Get Directions
                   </button>
                   <button
                     onClick={() => copyToClipboard(info.location, info.key)}
-                    className="flex items-center justify-center gap-1.5 rounded-lg border border-[#525E2C]/35 text-[#D1AB6D] py-2.5 sm:py-3 hover:bg-[#525E2C]/5 transition-all text-xs sm:text-sm font-semibold"
+                    className="flex items-center justify-center gap-1.5 rounded-lg border border-[#8498B0]/35 text-[#8498B0] py-2.5 sm:py-3 hover:bg-[#8498B0]/5 transition-all text-xs sm:text-sm font-semibold"
                   >
                     {copiedItems.has(info.key) ? (
                       <>
@@ -255,30 +255,30 @@ export function Details() {
 
         <div className="space-y-3 sm:space-y-4">
           {/* Attire Guidelines */}
-          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(210,164,164,0.18)] p-3.5 sm:p-5 overflow-hidden">
+          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,152,176,0.18)] p-3.5 sm:p-5 overflow-hidden">
             <div className="mb-2.5 sm:mb-3 relative z-10 text-center">
-              <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#D1AB6D]">
+              <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#8498B0]">
                 Attire &amp; Motif
               </h4>
             </div>
 
             <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6 space-y-3 sm:space-y-4">
               <div className="text-center space-y-2 sm:space-y-3">
-                <p className="text-xs sm:text-sm font-semibold text-[#D1AB6D]">
+                <p className="text-xs sm:text-sm font-semibold text-[#8498B0]">
                   {siteConfig.dressCode.note}
                 </p>
-                <p className="text-xs sm:text-sm text-[#D1AB6D]/90">
+                <p className="text-xs sm:text-sm text-[#8498B0]/90">
                   Please dress within our wedding colors to help create a soft, elegant romantic celebration.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <div className="border-t border-[#E0CFB5] pt-4">
-                  <h5 className="font-semibold text-xs sm:text-sm text-[#D1AB6D] mb-2">Principal Sponsors</h5>
-                  <p className="text-[10px] sm:text-xs text-[#D1AB6D]/80 mb-2">Kindly align attire below.</p>
+                  <h5 className="font-semibold text-xs sm:text-sm text-[#8498B0] mb-2">Principal Sponsors</h5>
+                  <p className="text-[10px] sm:text-xs text-[#8498B0]/80 mb-2">Kindly align attire below.</p>
                   <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
                     <Image
-                      src="/Details/Gemini_Generated_Image_ae29zpae29zpae29-removebg-preview.png"
+                      src="/Details/sponsor.png"
                       alt="Principal sponsors attire guideline"
                       fill
                       className="object-contain"
@@ -287,14 +287,14 @@ export function Details() {
                     />
                   </div>
                   <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                    <p className="text-[#D1AB6D]">
-                      <span className="font-semibold">Ladies:</span> Sage Green gown / long dress
+                    <p className="text-[#8498B0]">
+                      <span className="font-semibold">Ladies:</span> Blue-Gray gown / long dress
                     </p>
-                    <p className="text-[#D1AB6D]">
+                    <p className="text-[#8498B0]">
                       <span className="font-semibold">Gentlemen:</span> Black suit and tie
                     </p>
                     <div className="pt-1">
-                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#D1AB6D] mb-1">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#8498B0] mb-1">
                         Palette
                       </p>
                       <div className="flex flex-wrap gap-1.5">
@@ -312,11 +312,11 @@ export function Details() {
                 </div>
 
                 <div className="border-t border-[#F5E5D9] pt-4">
-                  <h5 className="font-semibold text-xs sm:text-sm text-[#D1AB6D] mb-2">Wedding Guests</h5>
-                  <p className="text-[10px] sm:text-xs text-[#D1AB6D]/80 mb-2">Kindly align attire below.</p>
+                  <h5 className="font-semibold text-xs sm:text-sm text-[#8498B0] mb-2">Wedding Guests</h5>
+                  <p className="text-[10px] sm:text-xs text-[#8498B0]/80 mb-2">Kindly align attire below.</p>
                   <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
                     <Image
-                      src="/Details/Gemini_Generated_Image_qr3jfqqr3jfqqr3j-removebg-preview.png"
+                      src="/Details/guest.png"
                       alt="Guest attire guideline"
                       fill
                       className="object-contain"
@@ -325,14 +325,14 @@ export function Details() {
                     />
                   </div>
                   <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
-                    <p className="text-[#D1AB6D]">
+                    <p className="text-[#8498B0]">
                       <span className="font-semibold">Gents:</span> {siteConfig.dressCode.guests.gents}
                     </p>
-                    <p className="text-[#D1AB6D]">
+                    <p className="text-[#8498B0]">
                       <span className="font-semibold">Ladies:</span> {siteConfig.dressCode.guests.ladies}
                     </p>
                     <div className="pt-1">
-                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#D1AB6D] mb-1">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#8498B0] mb-1">
                         Palette
                       </p>
                       <div className="flex flex-wrap gap-1.5">
@@ -353,19 +353,19 @@ export function Details() {
           </div>
 
           {/* Arrival Time & Reception Guidelines */}
-          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(210,164,164,0.18)] p-3.5 sm:p-5 overflow-hidden">
+          <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,152,176,0.18)] p-3.5 sm:p-5 overflow-hidden">
             <div className="space-y-4 sm:space-y-5">
               {/* Arrival Time */}
               <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6">
                 <div className="mb-3 sm:mb-4">
-                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#D1AB6D] mb-3">
+                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#8498B0] mb-3">
                     Arrival Time
                   </h4>
                   <div className="space-y-2 sm:space-y-2.5">
-                    <p className="text-xs sm:text-sm text-[#D1AB6D] leading-relaxed">
-                      Kindly arrive by <span className="font-semibold text-[#525E2C]">{siteConfig.ceremony.guestsTime}</span> so we can begin the wedding ceremony promptly at exactly <span className="font-semibold text-[#525E2C]">{siteConfig.ceremony.time}</span>.
+                    <p className="text-xs sm:text-sm text-[#8498B0] leading-relaxed">
+                      Kindly arrive by <span className="font-semibold text-[#8498B0]">{siteConfig.ceremony.guestsTime}</span> so we can begin the wedding ceremony promptly at exactly <span className="font-semibold text-[#8498B0]">{siteConfig.ceremony.time}</span>.
                     </p>
-                    <p className="text-xs sm:text-sm text-[#D1AB6D] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#8498B0] leading-relaxed">
                       Your punctuality means so much to us — and don&apos;t forget to have a light snack beforehand so you can enjoy the celebration comfortably!
                     </p>
                   </div>
@@ -375,11 +375,11 @@ export function Details() {
               {/* Reception Guidelines */}
               <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6">
                 <div className="mb-3 sm:mb-4">
-                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#D1AB6D] mb-3">
+                  <h4 className="text-[0.75rem] sm:text-sm md:text-base font-semibold tracking-[0.3em] uppercase text-[#8498B0] mb-3">
                     Reception Guidelines
                   </h4>
                   <div className="space-y-2 sm:space-y-2.5">
-                    <p className="text-xs sm:text-sm text-[#D1AB6D] leading-relaxed">
+                    <p className="text-xs sm:text-sm text-[#8498B0] leading-relaxed">
                       We&apos;re so excited to have you celebrate with us! Unfortunately due to limited space and our venue&apos;s capacity, we&apos;re unable to accommodate additional guests. We truly hope you understand and we can&apos;t wait to celebrate together on the day!
                     </p>
                   </div>
@@ -388,26 +388,26 @@ export function Details() {
             </div>
           </div>
 
-          {/* Travel & Parking - Compact, warm blush motif */}
-          <div className="relative rounded-2xl border border-[#E0CFB5]/70 bg-[#F0F0EE]/90 backdrop-blur-lg shadow-[0_18px_40px_rgba(210,164,164,0.18)] p-3.5 sm:p-5 overflow-hidden">
+          {/* Travel & Parking - Compact, blue-gray & tan motif */}
+          <div className="relative rounded-2xl border border-[#E0CFB5]/70 bg-[#F1F1EF]/90 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,152,176,0.18)] p-3.5 sm:p-5 overflow-hidden">
             {/* Header */}
             <div className="flex items-center justify-center gap-2 mb-2.5 sm:mb-3 relative z-10">
               <div className="p-1.5 rounded-full shadow-md bg-white/95 border border-[#E0CFB5]/60">
-                <Car className="w-3.5 h-3.5 text-[#525E2C]" />
+                <Car className="w-3.5 h-3.5 text-[#8498B0]" />
               </div>
-              <h4 className="font-semibold text-xs sm:text-base text-[#D1AB6D]">Parking &amp; Travel</h4>
+              <h4 className="font-semibold text-xs sm:text-base text-[#8498B0]">Parking &amp; Travel</h4>
             </div>
 
             <div className="space-y-3 relative z-10">
               {/* Parking */}
-              <div className="rounded-xl p-2.5 sm:p-3 border border-[#E0CFB5]/80 bg-gradient-to-br from-white/95 via-[#F0F0EE]/95 to-white/90 shadow-sm">
+              <div className="rounded-xl p-2.5 sm:p-3 border border-[#E0CFB5]/80 bg-gradient-to-br from-white/95 via-[#F1F1EF]/95 to-white/90 shadow-sm">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#525E2C]/90 text-[#F0F0EE]">
+                  <div className="p-2 rounded-lg bg-[#8498B0]/90 text-[#F1F1EF]">
                     <Car className="w-4 h-4" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-[11px] sm:text-sm font-semibold text-[#D1AB6D]">Parking Available</p>
-                    <p className="text-[10px] sm:text-xs text-[#D1AB6D]/85">
+                    <p className="text-[11px] sm:text-sm font-semibold text-[#8498B0]">Parking Available</p>
+                    <p className="text-[10px] sm:text-xs text-[#8498B0]/85">
                       Parking is available at the venue. Please arrive early to find a comfortable spot.
                     </p>
                   </div>
@@ -415,14 +415,14 @@ export function Details() {
               </div>
 
               {/* Transportation */}
-              <div className="rounded-xl p-2.5 sm:p-3 border border-[#E0CFB5]/80 bg-gradient-to-br from-white/95 via-[#F0F0EE]/95 to-white/90 shadow-sm">
+              <div className="rounded-xl p-2.5 sm:p-3 border border-[#E0CFB5]/80 bg-gradient-to-br from-white/95 via-[#F1F1EF]/95 to-white/90 shadow-sm">
                 <div className="flex items-start gap-3">
-                  <div className="p-2 rounded-lg bg-[#909E8D]/90 text-[#F0F0EE]">
+                  <div className="p-2 rounded-lg bg-[#BFCDD8]/90 text-[#3A4A5C]">
                     <Navigation className="w-4 h-4" />
                   </div>
                   <div className="flex-1">
-                    <p className="text-[11px] sm:text-sm font-semibold text-[#D1AB6D]">Transportation</p>
-                    <p className="text-[10px] sm:text-xs text-[#D1AB6D]/85">
+                    <p className="text-[11px] sm:text-sm font-semibold text-[#8498B0]">Transportation</p>
+                    <p className="text-[10px] sm:text-xs text-[#8498B0]/85">
                       Private vehicles and local transport are welcome. Coordinate with friends or family and plan your
                       route ahead of time.
                     </p>
@@ -431,24 +431,24 @@ export function Details() {
               </div>
 
               {/* Tips */}
-              <div className="rounded-xl p-2.5 sm:p-3 border border-[#E0CFB5]/75 bg-gradient-to-br from-white/95 via-[#F0F0EE]/95 to-white/90">
-                <p className="text-[11px] sm:text-sm font-semibold mb-2 flex items-center gap-2 text-[#D1AB6D]">
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#525E2C]/10 text-[#525E2C]">
+              <div className="rounded-xl p-2.5 sm:p-3 border border-[#E0CFB5]/75 bg-gradient-to-br from-white/95 via-[#F1F1EF]/95 to-white/90">
+                <p className="text-[11px] sm:text-sm font-semibold mb-2 flex items-center gap-2 text-[#8498B0]">
+                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-[#8498B0]/10 text-[#8498B0]">
                     <MapPin className="w-3.5 h-3.5" />
                   </span>
                   Quick Tips
                 </p>
-                <ul className="text-[10px] sm:text-xs space-y-1 text-[#D1AB6D]/90">
+                <ul className="text-[10px] sm:text-xs space-y-1 text-[#8498B0]/90">
                   <li className="flex items-start gap-2">
-                    <span className="text-[#525E2C] mt-0.5">•</span>
+                    <span className="text-[#8498B0] mt-0.5">•</span>
                     <span>Plan your route ahead to avoid unexpected delays.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#525E2C] mt-0.5">•</span>
+                    <span className="text-[#8498B0] mt-0.5">•</span>
                     <span>Please avoid walking during the ceremony. Approach the coordinator or wait to be guided.</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-[#525E2C] mt-0.5">•</span>
+                    <span className="text-[#8498B0] mt-0.5">•</span>
                     <span>Coordinate carpooling with friends or family when possible.</span>
                   </li>
                 </ul>
@@ -531,7 +531,7 @@ export function Details() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-0" />
 
               <Image
-                src={showImageModal === "ceremony" ? "/Details/St. Joseph the Patriarch Parish.jpg" : "/Details/Golden Peak Hotel & Suites.jpg"}
+                src={showImageModal === "ceremony" ? "/Details/Santuario de San Vicente de Paul.jpg" : "/Details/Bulwagan de San Vicente.jpg"}
                 alt={showImageModal === "ceremony" ? siteConfig.ceremony.location : siteConfig.reception.location}
                 fill
                 className="object-contain p-6 sm:p-8 md:p-10 transition-transform duration-700 group-hover:scale-105 z-10"

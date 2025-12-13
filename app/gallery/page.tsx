@@ -35,22 +35,22 @@ export default async function GalleryPage() {
   ]
 
   return (
-    <main className="min-h-screen bg-[#525E2C] relative overflow-hidden">
+    <main className="min-h-screen bg-[#8498B0] relative overflow-hidden">
       {/* Enhanced background elements with warm blush spring motif */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Soft gradient overlays with blush + champagne palette */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#D1AB6D]/90 via-[#525E2C]/70 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#D1AB6D]/95 via-[#525E2C]/70 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#D2AC6E]/90 via-[#8498B0]/70 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#D2AC6E]/95 via-[#8498B0]/70 to-transparent" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(224,207,181,0.3),transparent_55%)] opacity-90" />
         
         {/* Floating decorative circles with motif colors */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-[#909E8D]/26 rounded-full blur-3xl animate-pulse-slow" />
+        <div className="absolute top-10 left-10 w-32 h-32 bg-[#8498B0]/26 rounded-full blur-3xl animate-pulse-slow" />
         <div
           className="absolute top-20 right-16 w-24 h-24 bg-[#E0CFB5]/26 rounded-full blur-2xl animate-pulse-slow"
           style={{ animationDelay: "1s" }}
         />
         <div
-          className="absolute bottom-16 left-20 w-28 h-28 bg-[#F0F0EE]/22 rounded-full blur-3xl animate-pulse-slow"
+          className="absolute bottom-16 left-20 w-28 h-28 bg-[#F1F1EF]/22 rounded-full blur-3xl animate-pulse-slow"
           style={{ animationDelay: "2s" }}
         />
         <div
@@ -58,7 +58,7 @@ export default async function GalleryPage() {
           style={{ animationDelay: "0.5s" }}
         />
         <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#525E2C]/24 rounded-full blur-3xl animate-pulse-slow"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-40 h-40 bg-[#8498B0]/24 rounded-full blur-3xl animate-pulse-slow"
           style={{ animationDelay: "1.5s" }}
         />
         
@@ -72,8 +72,8 @@ export default async function GalleryPage() {
           <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
             <div className="w-8 sm:w-12 md:w-16 h-px bg-[#E0CFB5]/60" />
             <div className="w-1.5 h-1.5 bg-[#E0CFB5]/80 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#F0F0EE]/80 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#909E8D]/80 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#F1F1EF]/80 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#8498B0]/80 rounded-full" />
             <div className="w-8 sm:w-12 md:w-16 h-px bg-[#E0CFB5]/60" />
           </div>
           
@@ -90,8 +90,8 @@ export default async function GalleryPage() {
           {/* Decorative element below subtitle */}
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
             <div className="w-1.5 h-1.5 bg-[#E0CFB5]/80 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#F0F0EE]/80 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#909E8D]/80 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#F1F1EF]/80 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-[#8498B0]/80 rounded-full" />
           </div>
         </div>
 
@@ -115,7 +115,7 @@ export default async function GalleryPage() {
 
         {/* CTA Section */}
         <div className="mt-8 sm:mt-12 md:mt-16 text-center">
-          <div className="bg-[#525E2C]/98 backdrop-blur-md rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 border-2 border-[#E0CFB5]/60 max-w-2xl mx-auto shadow-[0_8px_32px_rgba(0,0,0,0.45)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] transition-all duration-300">
+          <div className="bg-[#8498B0]/98 backdrop-blur-md rounded-xl sm:rounded-2xl md:rounded-3xl p-4 sm:p-6 md:p-8 border-2 border-[#E0CFB5]/60 max-w-2xl mx-auto shadow-[0_8px_32px_rgba(0,0,0,0.45)] hover:shadow-[0_12px_40px_rgba(0,0,0,0.6)] transition-all duration-300">
             {/* Corner accents */}
             <div className="relative">
               <div className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[#E0CFB5]/70 rounded-tl-lg" />
@@ -136,7 +136,7 @@ export default async function GalleryPage() {
               </div>
               <Link
                 href="/#snap-share"
-                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-[#E0CFB5] to-[#F7E7CE] text-[#D1AB6D] font-semibold text-xs sm:text-sm md:text-base rounded-full hover:from-[#E0CFB5]/90 hover:to-[#F7E7CE]/90 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="inline-flex items-center justify-center gap-1.5 sm:gap-2 px-4 py-2 sm:px-6 sm:py-3 bg-gradient-to-r from-[#E0CFB5] to-[#F7E7CE] text-[#D2AC6E] font-semibold text-xs sm:text-sm md:text-base rounded-full hover:from-[#E0CFB5]/90 hover:to-[#F7E7CE]/90 hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 Learn More About Sharing
               </Link>

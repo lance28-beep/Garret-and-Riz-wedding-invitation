@@ -1131,7 +1131,7 @@ export default function DashboardPage() {
         </div>
 
         {/* Guest List */}
-        <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
+        <div className="bg-[#F1F1EF] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
           <div className="overflow-x-auto">
             <table className="w-full">
               <thead className="bg-[#E0CFB5]/60">
@@ -1242,7 +1242,7 @@ export default function DashboardPage() {
         {activeTab === "requests" && (
           <>
             {/* Search Section */}
-            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
+            <div className="bg-[#F1F1EF] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
                 <div className="flex-1 w-full">
                   <div className="relative">
@@ -1276,7 +1276,7 @@ export default function DashboardPage() {
             </div>
 
             {/* Requests List */}
-            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
+            <div className="bg-[#F1F1EF] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-[#E0CFB5]/60">
@@ -1332,7 +1332,7 @@ export default function DashboardPage() {
                             <div className="flex items-center justify-center gap-2">
                               <button
                                 onClick={() => handleAddRequestToGuestListClick(request)}
-                                className="px-4 py-2 bg-[#909E8D] hover:bg-[#A5B4A3] text-black rounded-lg transition-colors font-semibold text-sm flex items-center gap-2 shadow-md hover:shadow-lg border border-[#F0F0EE]/60"
+                                className="px-4 py-2 bg-[#8498B0] hover:bg-[#A5B4A3] text-black rounded-lg transition-colors font-semibold text-sm flex items-center gap-2 shadow-md hover:shadow-lg border border-[#F1F1EF]/60"
                                 title="Add to guest list"
                               >
                                 <UserCheck className="h-4 w-4" />
@@ -1366,7 +1366,7 @@ export default function DashboardPage() {
         {activeTab === "entourage" && (
           <>
             {/* Search Section */}
-            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
+            <div className="bg-[#F1F1EF] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
                 <div className="flex-1 w-full">
                   <div className="relative">
@@ -1387,7 +1387,7 @@ export default function DashboardPage() {
                     setEntourageFormData({ Name: "", RoleCategory: "", RoleTitle: "", Email: "" })
                     setShowEntourageModal(true)
                   }}
-                className="bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F0F0EE]/60"
+                className="bg-[#8498B0] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F1F1EF]/60"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Add Member
@@ -1413,7 +1413,7 @@ export default function DashboardPage() {
             </div>
 
             {/* Entourage List */}
-            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
+            <div className="bg-[#F1F1EF] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-[#E0CFB5]/60">
@@ -1489,7 +1489,7 @@ export default function DashboardPage() {
         {activeTab === "principalsponsor" && (
           <>
             {/* Search Section */}
-            <div className="bg-[#F0F0EE] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
+            <div className="bg-[#F1F1EF] rounded-2xl p-6 shadow-md border border-[#E0CFB5]/60 mb-6">
               <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between mb-4">
                 <div className="flex-1 w-full">
                   <div className="relative">
@@ -1509,7 +1509,7 @@ export default function DashboardPage() {
                     setPrincipalSponsorFormData({ MalePrincipalSponsor: "", FemalePrincipalSponsor: "" })
                     setShowPrincipalSponsorModal(true)
                   }}
-                className="bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F0F0EE]/60"
+                className="bg-[#8498B0] hover:bg-[#A5B4A3] text-black transition-colors border border-[#F1F1EF]/60"
                 >
                   <Plus className="h-4 w-4 mr-2" />
                   Add Sponsors
@@ -1534,7 +1534,7 @@ export default function DashboardPage() {
             </div>
 
             {/* PrincipalSponsor List */}
-            <div className="bg-[#F0F0EE] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
+            <div className="bg-[#F1F1EF] rounded-2xl shadow-md border border-[#E0CFB5]/60 overflow-hidden">
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-[#E0CFB5]/60">
@@ -1695,7 +1695,7 @@ function AddToGuestListModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-md bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
+      <div className="w-full max-w-md bg-[#F1F1EF] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
         <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">Add to Guest List</h3>
@@ -1739,7 +1739,7 @@ function AddToGuestListModal({
             <Button
               onClick={onConfirm}
               disabled={isLoading}
-              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#8498B0] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -1832,7 +1832,7 @@ function EntourageModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
+      <div className="w-full max-w-xl bg-[#F1F1EF] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">
@@ -1921,7 +1921,7 @@ function EntourageModal({
             <Button
               onClick={onSave}
               disabled={isLoading}
-              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#8498B0] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -1964,7 +1964,7 @@ function PrincipalSponsorModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
+      <div className="w-full max-w-xl bg-[#F1F1EF] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">
@@ -2011,7 +2011,7 @@ function PrincipalSponsorModal({
             <Button
               onClick={onSave}
               disabled={isLoading || !formData.MalePrincipalSponsor.trim()}
-              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#8498B0] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -2052,7 +2052,7 @@ function AddGuestModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-md bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
+      <div className="w-full max-w-md bg-[#F1F1EF] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
         <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">Add New Guest</h3>
@@ -2091,7 +2091,7 @@ function AddGuestModal({
             <Button
               onClick={onSave}
               disabled={isLoading || !formData.Name.trim()}
-              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#8498B0] hover:bg-[#A5B4A3] text-black disabled:opacity-50 transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -2134,7 +2134,7 @@ function EditGuestModal({
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-2xl bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
+      <div className="w-full max-w-2xl bg-[#F1F1EF] rounded-2xl shadow-2xl border border-[#E0CFB5]/70 max-h-[90vh] overflow-y-auto">
         <div className="sticky top-0 bg-[#E0CFB5]/70 px-6 py-4 border-b border-[#E0CFB5]/70 rounded-t-2xl">
           <div className="flex items-center justify-between">
             <h3 className="text-xl font-bold text-[#2F3724] font-sans">Edit Guest</h3>
@@ -2217,7 +2217,7 @@ function EditGuestModal({
             <Button
               onClick={onSave}
               disabled={isLoading}
-              className="flex-1 bg-[#909E8D] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
+              className="flex-1 bg-[#8498B0] hover:bg-[#A5B4A3] text-black transition-colors border border-[#2F3724]/40"
             >
               {isLoading ? (
                 <>
@@ -2243,7 +2243,7 @@ function ConfirmModal({ open, title, message, onCancel, onConfirm }: { open: boo
   if (!open) return null
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm">
-      <div className="w-full max-w-sm bg-[#F0F0EE] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
+      <div className="w-full max-w-sm bg-[#F1F1EF] rounded-2xl shadow-2xl border border-[#E0CFB5]/70">
         <div className="px-5 py-4 border-b border-[#E0CFB5]/70">
           <h3 className="text-base sm:text-lg font-bold text-[#2F3724]">{title}</h3>
         </div>
@@ -2252,7 +2252,7 @@ function ConfirmModal({ open, title, message, onCancel, onConfirm }: { open: boo
         </div>
         <div className="px-5 py-4 flex justify-end gap-2 border-t border-[#E0CFB5]/70">
           <button onClick={onCancel} className="px-4 py-2 text-sm rounded-lg border border-[#E0CFB5]/70 text-[#2F3724] hover:bg-[#E0CFB5]/40 transition-colors">Cancel</button>
-          <button onClick={onConfirm} className="px-4 py-2 text-sm rounded-lg bg-[#909E8D] text-black hover:bg-[#A5B4A3] transition-colors border border-[#2F3724]/40">Delete</button>
+          <button onClick={onConfirm} className="px-4 py-2 text-sm rounded-lg bg-[#8498B0] text-black hover:bg-[#A5B4A3] transition-colors border border-[#2F3724]/40">Delete</button>
         </div>
       </div>
     </div>

@@ -76,7 +76,10 @@ function CountdownUnit({ value, label }: CountdownUnitProps) {
       </div>
 
       {/* Label */}
-      <span className="text-[10px] sm:text-xs md:text-sm font-inter font-semibold uppercase tracking-[0.16em] text-white/90">
+      <span 
+        className="text-xs sm:text-sm md:text-base font-inter font-semibold uppercase tracking-[0.16em] text-white"
+        style={{ textShadow: "0 2px 10px rgba(0,0,0,0.6), 0 1px 5px rgba(0,0,0,0.4)" }}
+      >
         {label}
       </span>
     </div>
@@ -175,8 +178,8 @@ export function Countdown() {
       className="relative bg-transparent py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
     >
       {/* Soft overlay for readability */}
-      <div className="pointer-events-none absolute inset-0 bg-[#525E2C]/45 sm:bg-[#525E2C]/40 backdrop-blur-[1px]" />
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#525E2C]/55 via-transparent to-[#525E2C]/65" />
+      <div className="pointer-events-none absolute inset-0 bg-[#8498B0]/45 sm:bg-[#8498B0]/40 backdrop-blur-[1px]" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#8498B0]/55 via-transparent to-[#8498B0]/65" />
       {/* Clean background with solid burgundy tone (no extra overlays) */}
 
       {/* Monogram - centered at top */}
@@ -187,20 +190,15 @@ export function Countdown() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="relative"
         >
-          <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[36rem] lg:h-[36rem] xl:w-[40rem] xl:h-[40rem] opacity-90">
+          <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[28rem] md:h-[28rem] lg:w-[36rem] lg:h-[36rem] xl:w-[40rem] xl:h-[40rem] opacity-100">
+            {/* White monogram */}
             <Image
-              src="/monogram/monogram.png"
+              src="/monogram/NewMonogram.png"
               alt={`${groomNickname} & ${brideNickname} Monogram`}
               fill
-              className="object-contain"
-              style={{
-                filter:
-                  "brightness(0) invert(1) drop-shadow(0 0 22px rgba(255,255,255,0.7)) drop-shadow(0 0 38px rgba(255,255,255,0.45)) drop-shadow(0 10px 20px rgba(0,0,0,0.45))",
-              }}
+              className="object-contain brightness-0 invert"
               priority={false}
             />
-            {/* Glow effect behind monogram */}
-            <div className="absolute inset-0 blur-3xl bg-white/25 -z-10 scale-125" />
           </div>
         </motion.div>
       </div>
@@ -214,11 +212,17 @@ export function Countdown() {
           <div className="w-8 sm:w-12 md:w-16 h-px bg-white/25" />
         </div>
         
-        <h2 className="imperial-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-normal text-white mb-2 sm:mb-3 md:mb-4 drop-shadow-lg">
+        <h2 
+          className="imperial-script-regular text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-normal text-white mb-3 sm:mb-4 md:mb-5"
+          style={{ textShadow: "0 4px 20px rgba(0,0,0,0.7), 0 2px 10px rgba(0,0,0,0.5), 0 0 8px rgba(0,0,0,0.4)" }}
+        >
           Counting down to our forever
         </h2>
         
-        <p className="text-xs sm:text-sm md:text-base lg:text-lg text-white/95 font-light max-w-xl mx-auto leading-relaxed px-2">
+        <p 
+          className="text-sm sm:text-base md:text-lg lg:text-xl text-white font-normal max-w-2xl mx-auto leading-relaxed px-3 sm:px-4"
+          style={{ textShadow: "0 2px 12px rgba(0,0,0,0.6), 0 1px 6px rgba(0,0,0,0.4)" }}
+        >
           Every heartbeat brings us closer to the moment when two hearts become one. Join {groomNickname} and {brideNickname} as they count down to forever.
         </p>
         
@@ -260,8 +264,8 @@ export function Countdown() {
                 >
                   {/* Month */}
                   <span
-                    className="text-[0.65rem] sm:text-xs md:text-sm uppercase tracking-[0.4em] sm:tracking-[0.5em] text-white"
-                    style={{ textShadow: "0 2px 14px rgba(255,255,255,0.65)" }}
+                    className="text-xs sm:text-sm md:text-base uppercase tracking-[0.4em] sm:tracking-[0.5em] text-white font-semibold"
+                    style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7), 0 1px 8px rgba(0,0,0,0.5)" }}
                   >
                     {ceremonyMonth}
                   </span>
@@ -272,8 +276,8 @@ export function Countdown() {
                     <div className="flex flex-1 items-center justify-end gap-1.5 sm:gap-2.5">
                       <span className="h-[0.5px] flex-1 bg-white/45" />
                       <span
-                        className="text-[0.6rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] text-white"
-                        style={{ textShadow: "0 2px 14px rgba(255,255,255,0.65)" }}
+                        className="text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.3em] sm:tracking-[0.4em] text-white font-semibold"
+                        style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7), 0 1px 8px rgba(0,0,0,0.5)" }}
                       >
                         {ceremonyDayShort}
                       </span>
@@ -287,11 +291,11 @@ export function Countdown() {
                         className="absolute inset-0 mx-auto h-[70%] max-h-[180px] w-[100px] sm:w-[140px] md:w-[170px] rounded-full bg-gradient-to-b from-white/40 via-white/25 to-transparent blur-[30px] opacity-85"
                       />
                       <span
-                        className={`${cinzel.className} relative text-[3rem] sm:text-[4.5rem] md:text-[5.5rem] lg:text-[6rem] font-bold leading-none tracking-wider text-white`}
+                        className={`${cinzel.className} relative text-[3.5rem] sm:text-[5rem] md:text-[6rem] lg:text-[7rem] font-bold leading-none tracking-wider text-white`}
                         style={{
                           textShadow:
-                            "0 0 22px rgba(255,255,255,0.9), 0 0 40px rgba(255,255,255,0.7), 0 6px 20px rgba(0,0,0,0.55)",
-                          filter: "drop-shadow(0 0 26px rgba(255,255,255,0.65))",
+                            "0 4px 24px rgba(0,0,0,0.8), 0 2px 12px rgba(0,0,0,0.6), 0 0 8px rgba(0,0,0,0.5)",
+                          filter: "drop-shadow(0 0 30px rgba(255,255,255,0.4))",
                         }}
                       >
                         {ceremonyDayNumber.padStart(2, "0")}
@@ -302,8 +306,8 @@ export function Countdown() {
                     <div className="flex flex-1 items-center gap-1.5 sm:gap-2.5">
                       <span className="h-[0.5px] w-6 sm:w-8 md:w-10 bg-white/45" />
                       <span
-                        className="text-[0.6rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] text-white"
-                        style={{ textShadow: "0 2px 14px rgba(255,255,255,0.65)" }}
+                        className="text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.3em] sm:tracking-[0.4em] text-white font-semibold"
+                        style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7), 0 1px 8px rgba(0,0,0,0.5)" }}
                       >
                         {ceremonyTimeDisplay.split(",")[0]}
                       </span>
@@ -313,8 +317,8 @@ export function Countdown() {
 
                   {/* Year */}
                   <span
-                    className="text-[0.65rem] sm:text-xs md:text-sm uppercase tracking-[0.4em] sm:tracking-[0.5em] text-white"
-                    style={{ textShadow: "0 2px 14px rgba(255,255,255,0.65)" }}
+                    className="text-xs sm:text-sm md:text-base uppercase tracking-[0.4em] sm:tracking-[0.5em] text-white font-semibold"
+                    style={{ textShadow: "0 3px 16px rgba(0,0,0,0.7), 0 1px 8px rgba(0,0,0,0.5)" }}
                   >
                     {ceremonyYear}
                   </span>

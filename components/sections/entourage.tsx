@@ -224,15 +224,15 @@ export function Entourage() {
     <section
       ref={sectionRef}
       id="entourage"
-      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]"
+      className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#8498B0] via-[#8498B0] to-[#8498B0]"
     >
       {/* Wedding gradient background */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         {/* Main gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#525E2C] via-[#909E8D] to-[#525E2C]" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#8498B0] via-[#8498B0] to-[#8498B0]" />
         {/* Radial gradient accents */}
-        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#525E2C]/90 via-[#909E8D]/60 to-transparent" />
+        <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#8498B0]/90 via-[#8498B0]/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#8498B0]/90 via-[#8498B0]/60 to-transparent" />
         {/* Soft radial light */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(240,240,238,0.25),transparent_70%)]" />
       </div>
@@ -576,7 +576,7 @@ export function Entourage() {
                           "Presider",
                         ])
                         // Special rule: paired sponsor roles with exactly 2 names should meet at center
-                        const PAIRED_SECTIONS = new Set(["Cord Sponsors", "Veil Sponsors"])
+                        const PAIRED_SECTIONS = new Set(["Candle Sponsors", "Cord Sponsors", "Veil Sponsors"])
                         if (PAIRED_SECTIONS.has(category) && members.length === 2) {
                           const left = members[0]
                           const right = members[1]

@@ -33,33 +33,31 @@ export function Registry() {
       
       <div className="relative z-10 text-center mb-6 sm:mb-8 md:mb-10 px-3 sm:px-4">
         {/* Glass overlay container */}
-        <div className="relative backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
+        <div className="relative backdrop-blur-lg bg-white/20 border border-white/30 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-[0_8px_32px_rgba(0,0,0,0.1)] max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#525E2C]/60 to-transparent" />
-            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#525E2C]/70 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#525E2C]/60 to-transparent" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-black/40 to-transparent" />
+            <div className="w-1.5 h-1.5 bg-black/60 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-black/40 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-black/60 rounded-full" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-black/40 to-transparent" />
           </div>
           
           <h2 
-            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-2 sm:mb-3 md:mb-4"
-            style={{ color: "#525E2C" }}
+            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-2 sm:mb-3 md:mb-4 text-black"
           >
             Gift Guide
           </h2>
           
           <p 
-            className="text-xs sm:text-sm md:text-base lg:text-lg font-light max-w-2xl mx-auto leading-relaxed px-2"
-            style={{ color: "#525E2C" }}
+            className="text-xs sm:text-sm md:text-base lg:text-lg font-light max-w-2xl mx-auto leading-relaxed px-2 text-black"
           >
             Your presence is the greatest gift. Should you wish to give, a monetary gift to help us begin our new life together would mean so much to us.
           </p>
           
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
-            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#525E2C]/70 rounded-full" />
-            <div className="w-1.5 h-1.5 bg-[#525E2C]/90 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-black/60 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-black/40 rounded-full" />
+            <div className="w-1.5 h-1.5 bg-black/60 rounded-full" />
           </div>
         </div>
       </div>
@@ -118,7 +116,7 @@ export function Registry() {
         </div>
 
         <div className="mt-6 sm:mt-8 text-center">
-          <p className="text-xs sm:text-sm text-white/90 italic">
+          <p className="text-xs sm:text-sm text-black italic">
             Thank you from the bottom of our hearts.
           </p>
         </div>

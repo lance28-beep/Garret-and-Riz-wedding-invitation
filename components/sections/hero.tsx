@@ -6,18 +6,22 @@ import { Cormorant_Garamond, Cinzel } from "next/font/google"
 import { siteConfig } from "@/content/site"
 
 const desktopImages = [
-  "/desktop-background/couple (1).jpeg",
-  "/desktop-background/couple (2).jpeg",
-  "/desktop-background/couple (3).jpeg",
-  "/desktop-background/couple (4).jpeg",
-  "/desktop-background/couple (5).jpeg",
+  "/desktop-background/couple (1).JPG",
+  "/desktop-background/couple (2).JPG",
+  "/desktop-background/couple (3).JPG",
+  "/desktop-background/couple (4).JPG",
+  "/desktop-background/couple (5).JPG",
+  "/desktop-background/couple (6).JPG",
 
 ]
 
 const mobileImages = [
-  "/mobile-background/couple (6).jpeg",
-  "/mobile-background/couple (7).jpeg",
-  "/mobile-background/couple (8).jpeg",
+  "/mobile-background/couple (1).JPG",
+  "/mobile-background/couple (2).JPG",
+  "/mobile-background/couple (3).JPG",
+  "/mobile-background/couple (4).JPG",
+  "/mobile-background/couple (5).JPG",
+
 
 ]
 
@@ -109,7 +113,7 @@ export function Hero() {
     : "THU"
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#F0F0EE]">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#F1F1EF]">
       <div className="absolute inset-0 w-full h-full">
         {imagesLoaded && backgroundImages.map((image, index) => (
           <div
@@ -126,8 +130,8 @@ export function Hero() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#909E8D]/90 via-[#909E8D]/70 to-transparent z-0" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#909E8D]/75 z-0" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#8498B0]/90 via-[#8498B0]/70 to-transparent z-0" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#8498B0]/75 z-0" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(144,158,141,0.3),transparent_55%)] mix-blend-screen" />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,rgba(240,240,238,0.28),transparent_35%)] opacity-70 animate-[pulse_9s_ease-in-out_infinite]" />
       </div>
@@ -459,7 +463,7 @@ export function Hero() {
           <div className="space-y-2 sm:space-y-3 md:space-y-4">
             {/* Names & Tagline */}
             <h1
-              className={`${cormorant.className} text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.24em] sm:tracking-[0.28em] uppercase font-medium text-center text-[#F0F0EE]`}
+              className={`${cormorant.className} text-xs sm:text-sm md:text-base lg:text-lg tracking-[0.24em] sm:tracking-[0.28em] uppercase font-medium text-center text-[#F1F1EF]`}
               style={{
                 textShadow: "0 2px 10px rgba(0,0,0,0.75)",
               }}
@@ -497,14 +501,14 @@ export function Hero() {
               <div className="flex w-full items-center gap-2 sm:gap-4 md:gap-5">
                 {/* Day of week & divider */}
               <div className="flex flex-1 items-center justify-end gap-1.5 sm:gap-2.5">
-                  <span className="h-[0.5px] flex-1 bg-[#F0F0EE]/45" />
+                  <span className="h-[0.5px] flex-1 bg-[#F1F1EF]/45" />
                   <span
                     className={`${cinzel.className} text-[0.6rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-light text-white`}
                     style={{ textShadow: "0 2px 14px rgba(255,255,255,0.65)" }}
                   >
                     {ceremonyDayShort}
                   </span>
-                  <span className="h-[0.5px] w-6 sm:w-8 md:w-10 bg-[#F0F0EE]/45" />
+                  <span className="h-[0.5px] w-6 sm:w-8 md:w-10 bg-[#F1F1EF]/45" />
                 </div>
 
                 {/* Day number */}
@@ -526,7 +530,7 @@ export function Hero() {
 
                 {/* Time */}
                 <div className="flex flex-1 items-center gap-1.5 sm:gap-2.5">
-                  <span className="h-[0.5px] w-6 sm:w-8 md:w-10 bg-[#F0F0EE]/45" />
+                  <span className="h-[0.5px] w-6 sm:w-8 md:w-10 bg-[#F1F1EF]/45" />
                   <span
                     className={`${cinzel.className} text-[0.6rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.3em] sm:tracking-[0.4em] font-light text-white`}
                     style={{ textShadow: "0 2px 14px rgba(255,255,255,0.65)" }}
@@ -549,7 +553,7 @@ export function Hero() {
           {/* Venue */}
           <div className="space-y-1 sm:space-y-1.5 pt-1 sm:pt-2">
             <p
-              className={`${cinzel.className} text-xs sm:text-sm md:text-base lg:text-lg uppercase tracking-[0.22em] sm:tracking-[0.26em] md:tracking-[0.3em] text-[#F0F0EE] font-medium`}
+              className={`${cinzel.className} text-xs sm:text-sm md:text-base lg:text-lg uppercase tracking-[0.22em] sm:tracking-[0.26em] md:tracking-[0.3em] text-[#F1F1EF] font-medium`}
               style={{
                 textShadow: "0 2px 18px rgba(0,0,0,0.9)",
               }}
@@ -557,7 +561,7 @@ export function Hero() {
               {siteConfig.ceremony.venue}
             </p>
             <p
-              className={`${cinzel.className} text-[0.6rem] sm:text-[0.7rem] md:text-xs lg:text-sm tracking-[0.15em] sm:tracking-[0.18em] text-[#F0F0EE]/90 font-light px-4 sm:px-8 md:px-12`}
+              className={`${cinzel.className} text-[0.6rem] sm:text-[0.7rem] md:text-xs lg:text-sm tracking-[0.15em] sm:tracking-[0.18em] text-[#F1F1EF]/90 font-light px-4 sm:px-8 md:px-12`}
               style={{
                 textShadow: "0 2px 12px rgba(0,0,0,0.7)",
               }}
@@ -569,7 +573,7 @@ export function Hero() {
           {/* Call-to-action section */}
           <div className="pt-3 sm:pt-4 md:pt-5 flex flex-col gap-3 sm:gap-4 items-center max-w-2xl mx-auto w-full px-4">
             <p
-              className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base uppercase tracking-[0.24em] sm:tracking-[0.28em] text-[#F0F0EE]/95 font-normal leading-relaxed text-center px-4`}
+              className={`${cinzel.className} text-[0.7rem] sm:text-xs md:text-sm lg:text-base uppercase tracking-[0.24em] sm:tracking-[0.28em] text-[#F1F1EF]/95 font-normal leading-relaxed text-center px-4`}
               style={{
                 textShadow: "0 2px 14px rgba(0,0,0,0.7)",
               }}
@@ -581,42 +585,22 @@ export function Hero() {
             <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch">
             <a
               href="#guest-list"
-              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#525E2C]/70`}
+              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D2AC6E]/70`}
               style={{
-                backgroundColor: "#525E2C",
-                boxShadow: "0 10px 24px rgba(0,0,0,0.35)",
+                backgroundColor: "#D2AC6E",
+                boxShadow: "0 10px 24px rgba(210,172,110,0.4)",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#909E8D";
-                e.currentTarget.style.boxShadow = "0 12px 28px rgba(0,0,0,0.4)";
+                e.currentTarget.style.backgroundColor = "#D2AC6E";
+                e.currentTarget.style.boxShadow = "0 12px 28px rgba(210,172,110,0.5)";
               }}
               onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#525E2C";
-                e.currentTarget.style.boxShadow = "0 10px 24px rgba(0,0,0,0.35)";
+                e.currentTarget.style.backgroundColor = "#D2AC6E";
+                e.currentTarget.style.boxShadow = "0 10px 24px rgba(210,172,110,0.4)";
               }}
             >
-              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-[0.65rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.32em] sm:tracking-[0.36em] text-[#F0F0EE] font-semibold transition-all duration-300" style={{ textShadow: "0 1px 6px rgba(82,94,44,0.6)" }}>
+              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-[0.65rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.32em] sm:tracking-[0.36em] text-[#F1F1EF] font-semibold transition-all duration-300" style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
                 Confirm Attendance
-              </span>
-            </a>
-            <a
-              href="#messages"
-              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F0F0EE]/60`}
-              style={{
-                backgroundColor: "#F0F0EE",
-                boxShadow: "0 10px 24px rgba(0,0,0,0.35)",
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#E0CFB5";
-                e.currentTarget.style.boxShadow = "0 12px 28px rgba(0,0,0,0.4)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.backgroundColor = "#F0F0EE";
-                e.currentTarget.style.boxShadow = "0 10px 24px rgba(0,0,0,0.35)";
-              }}
-            >
-              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-[0.65rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.32em] sm:tracking-[0.36em] text-[#2F1C1C] font-semibold transition-all duration-300" style={{ textShadow: "0 1px 6px rgba(255,255,255,0.6)" }}>
-                Read Our Story
               </span>
             </a>
             </div>

@@ -1,4 +1,4 @@
-# Cassly Jane & Mark Florence - Wedding Website
+# Garret & Riz - Wedding Website
 
 A beautiful, fully responsive wedding website built with Next.js 15, TypeScript, and Tailwind CSS.
 
@@ -98,8 +98,8 @@ Edit `content/site.ts` to update:
 ### Update Colors
 
 Edit `app/globals.css` to change the color scheme:
-- `--primary`: Rustic Purple (#6A4C93)
-- `--secondary`: Sage Green (#A8BDA8)
+- `--primary`: Dusty Blue (#9EAFC0)
+- `--secondary`: Tan (#D2B48C)
 
 ### Add Photos
 
@@ -134,7 +134,7 @@ For production, consider:
 ## Features in Detail
 
 ### Countdown Timer
-- Live countdown to December 3, 2025, 5:00 PM
+- Live countdown to March 18, 2026, 3:30 PM
 - Updates every second
 - Displays days, hours, minutes, and seconds
 
@@ -198,4 +198,4 @@ For questions or issues, please contact the couple directly or refer to the FAQ 
 
 ---
 
-Made with love for Cassly Jane & Mark Florence ❤️
+Made with love for Garret Rebagoda & Rizalyn Samson ❤️

@@ -1,152 +1,112 @@
 export const siteConfig = {
   couple: {
-    bride: "Kate",
-    brideNickname: "Kate",
-    groom: "Christian",
-    groomNickname: "Christian",
+    bride: "Rizalyn Samson",
+    brideNickname: "Riz",
+    groom: "Garret Rebagoda",
+    groomNickname: "Garret",
   },
   wedding: {
-    date: "January 10, 2026",
-    time: "2:00 PM",
-    venue: "St. Joseph the Patriarch Parish, Mabolo, Cebu City",
+    date: "March 18, 2026",
+    time: "3:30 PM",
+    venue: "Santuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
     tagline: "are getting married!",
-    theme: "Blue Gray & Gold Motif",
-    motif: "#BFCDD8, #8498B0, #D2AC6E, #E0CFB5, #F1F1EF",
+    theme: "Dusty Blue & Tan Motif",
+    motif: "#9EAFC0, #8B9DC3, #D2B48C, #C9B299, #E8DED0",
   },
   details: {
     rsvp: {
-      deadline: "December 20, 2025",
+      deadline: "February 18, 2026",
     },
   },
   ceremony: {
-    location: "St. Joseph the Patriarch Parish, Mabolo, Cebu City",
-    venue: "St. Joseph the Patriarch Parish",
-    date: "January 10, 2026",
-    day: "Saturday",
-    time: "2:00 PM",
-    entourageTime: "1:30 PM",
-    guestsTime: "1:30 PM",
+    location: "Santuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
+    venue: "Santuario de San Vicente de Paul",
+    date: "March 18, 2026",
+    day: "Tuesday",
+    time: "3:30 PM",
+    entourageTime: "2:45 PM",
+    guestsTime: "2:45 PM",
   },
   reception: {
-    location: "Golden Peak Hotel & Suites, Escario Cebu",
-    venue: "Golden Peak Hotel & Suites",
-    date: "January 10, 2026",
+    location: "Bulwagan de San Vicente, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
+    venue: "Bulwagan de San Vicente",
+    date: "March 18, 2026",
     time: "Following the ceremony",
   },
   dressCode: {
-    theme: "Blue Gray & Gold Motif",
+    theme: "Blue-Gray & Tan Motif",
     colors: ["#BFCDD8", "#8498B0", "#D2AC6E", "#E0CFB5", "#F1F1EF"],
     sponsors: {
       male: "Black Suit",
-      female: "Sage Green Dress/Gown"
+      female: "Blue-Gray Dress/Gown"
     },
     guests: {
-      gents: "Polo & Pants (Strictly no Tshirt) - Nude, Beige or Gold",
-      ladies: "Formal Dress/Gown/Suit - Nude, Beige or Gold"
+      gents: "Polo & Pants (Strictly no Tshirt) - Blue-Gray, Tan, or Beige",
+      ladies: "Formal Dress/Gown/Suit - Blue-Gray, Tan, or Beige"
     },
-    note: "We kindly request our guests to dress in formal attire with a color of our motif."
+    note: "We kindly request our guests to dress in formal attire with colors of our motif."
   },
   narratives: {
-    groom: `They met back in their architecture college days — just batchmates then, each living a separate life. She was the maarte one, the selective type who chose carefully the people she let in. He, on the other hand, was the friendly guy — kind, approachable, and someone everyone could easily talk to. They couldn't have been more different.
+    groom: `Garret and Rizalyn's story is one of faith, patience, and divine timing. Their journey together began in ways they never expected, brought together by circumstances that could only be orchestrated by God.
 
-Three years after graduation, fate decided to draw their lines together. It started simply — a few replies to her social media stories, a borrowed book, small conversations that didn't mean much at first. Then one day, they met again at a construction site. This time, they talked — really talked. And something was different.
+What started as a friendship slowly blossomed into something deeper. Through conversations, shared moments, and countless prayers, they discovered in each other a partner who would walk alongside them in faith and love.
 
-From then on, messages turned into conversations, and conversations turned into something deeper. It was during Sinulog when he invited her to visit Sto. Niño Church. They shared prayers & laughter — spending the whole day simply enjoying each other's company. From then on, they have learned, grown, and become better together in all aspects of life.`,
-    bride: `She found him interesting, warm, and genuine. Days after their time at Sto. Niño Church, she realized that maybe, just maybe, this was the man she had been praying for — someone who would bring her closer to God.
+Garret found in Rizalyn a woman of strength, grace, and unwavering faith. Her kindness and gentle spirit drew him closer, not just to her, but to God. Through her, he learned what it means to love selflessly and to cherish every moment together.`,
+    bride: `Rizalyn found in Garret a man of integrity, compassion, and steadfast devotion. His genuine heart and caring nature showed her what true partnership means. In him, she found someone who encourages her to grow, supports her dreams, and stands with her through all of life's seasons.
 
-Months later, they made it official. Their love is not the kind you see in movies — not perfect, not always grand. But it is real, quiet, and steadfast. Two people, choosing each other every single day.
+Together, they have learned that love is not just about grand gestures, but about choosing each other every single day, through joy and challenges alike. Their love is built on a foundation of faith, trust, and the belief that God has brought them together for a beautiful purpose.
 
-And now, as they begin a new chapter of their lives, they invite you to witness and celebrate the love that God has written for them.`,
+And now, as they begin this new chapter as husband and wife, they invite you to witness and celebrate the love that God has so graciously written for them.`,
   },
   colors: {
-    primary: "#BFCDD8",
-    secondary: "#8498B0",
+    primary: "#8498B0",
+    secondary: "#BFCDD8",
   },
   snapShare: {
-    googleDriveLink: "https://drive.google.com/drive/folders/1LSMV4MFdOMFPaAJQ_w5nulW_ICnem8qv?usp=sharing",
+    googleDriveLink: "https://drive.google.com/drive/folders/1TCMpEvLcgul5tMH77Elch8rnjBZWsIsv?usp=sharing",
     instructions: "Please scan this QR Code, create a folder with your name and upload the photos and videos you have taken during our wedding reception. We are delighted to see your snaps too!",
   },
 }
 
 export const entourage = [
   // Best Man & Maid/Matron of Honor
-  { role: "Best Man", name: "Red Casallo" },
-  { role: "Matron of Honor", name: "Imeeliza Timpug" },
+  // { role: "Best Man", name: "Name Here" },
+  // { role: "Maid of Honor", name: "Name Here" },
 
-  // Parents of the Bride
-  { role: "Father", name: "Jaime Balajadia (Uncle)", group: "kate-family" },
-  { role: "Mother", name: "Eloida Ricohermoso", group: "kate-family" },
+  // Parents of the Bride (Rizalyn)
+  // { role: "Father", name: "Father's Name", group: "riz-family" },
+  // { role: "Mother", name: "Mother's Name", group: "riz-family" },
 
-  // Parents of the Groom
-  { role: "Brother", name: "Perry Ticbaen (Brother)", group: "christian-family" },
-  { role: "Mother", name: "Felicitas Ticbaen", group: "christian-family" },
+  // Parents of the Groom (Garret)
+  // { role: "Father", name: "Father's Name", group: "garret-family" },
+  // { role: "Mother", name: "Mother's Name", group: "garret-family" },
 
   // Bridesmaids
-  { role: "Bridesmaid", name: "Thea Lynn Dela Cruz" },
-  { role: "Bridesmaid", name: "Keara Zane A Cariño" },
-  { role: "Bridesmaid", name: "Fidnah Gracia Padallan" },
-  { role: "Bridesmaid", name: "Lorna Ladisla" },
-  { role: "Bridesmaid", name: "Carla Vanessa Tabilin" },
-  { role: "Bridesmaid", name: "Romela Tolentino" },
-  { role: "Bridesmaid", name: "Emmalyn Lipio" },
-  { role: "Bridesmaid", name: "Carmen Pascual" },
-  { role: "Bridesmaid", name: "Ciddie Manota" },
+  // { role: "Bridesmaid", name: "Name Here" },
 
   // Groomsmen
-  { role: "Groomsman", name: "Noah Alcaria" },
-  { role: "Groomsman", name: "Jervin Garcia" },
-  { role: "Groomsman", name: "Myric Mateo" },
-  { role: "Groomsman", name: "Caughvan Faustino" },
-  { role: "Groomsman", name: "Jayson Torquiano" },
-  { role: "Groomsman", name: "Jendah Egino" },
-  { role: "Groomsman", name: "Vincent Saguinsin" },
-  { role: "Groomsman", name: "Frederick Manota" },
-  { role: "Groomsman", name: "Emerson Sulit" },
+  // { role: "Groomsman", name: "Name Here" },
 
   // Secondary Sponsors
   // Candle Sponsors
-  { role: "Bridesmaid", name: "Romela Tolentino", group: "candle" },
+  // { role: "Candle Sponsor", name: "Name Here", group: "candle" },
   // Cord Sponsors
-  { role: "Bridesmaid", name: "Emmalyn Lipio", group: "cord" },
+  // { role: "Cord Sponsor", name: "Name Here", group: "cord" },
+  // Veil Sponsors
+  // { role: "Veil Sponsor", name: "Name Here", group: "veil" },
 
-  // Flower Girls and Little Bride
-  { role: "Flower Girl", name: "Kirsten Elija Leyson" },
-  { role: "Flower Girl", name: "Blake Juan" },
-  { role: "Flower Girl", name: "Reign Arastel Rivera" },
-  { role: "Little Bride", name: "Paige Yael Ticbaen" },
-
-  // Ring / Coin Bearers
-  { role: "Ring Bearer", name: "Khaleb Dwayne M. Beltran" },
-  { role: "Coin Bearer", name: "Lucas Rhaiden Beltran" },
-  { role: "Ring Bearer", name: "Dean James Ticbaen" },
+  // Flower Girls and Ring/Coin Bearers
+  // { role: "Flower Girl", name: "Name Here" },
+  // { role: "Ring Bearer", name: "Name Here" },
+  // { role: "Coin Bearer", name: "Name Here" },
 ]
 
 export const principalSponsors = [
-  // Paired from provided Male and Female Sponsors (order-based)
-  { name: "Mr. Jony Balao", spouse: "Mrs. Conception Balao" },
-  { name: "Mr. Cresencio Francisco", spouse: "Dr. Editha Francisco" },
-  { name: "Mr. Aurelio Sab-it", spouse: "Mrs. Ester Sab-it" },
-  { name: "Mr. Pio McLiing", spouse: "Mrs. Edna Boloma" },
-  { name: "Mr. Fabian Dupiano", spouse: "Mrs. Mary Christine Dupiano" },
-  { name: "Mr. Roberto Dosdos", spouse: "Mrs. Angelica Dosdos" },
-  { name: "Mr. George Sacla", spouse: "Mrs. Minda De Bolt Sacla" },
-  { name: "Mr. Elmo Casallo", spouse: "Mrs. Nora Casallo" },
-  { name: "Engr. Jimmy Atayoc Sr", spouse: "Mrs. Mercedes Atayoc" },
-  { name: "Mr. Tomas Moyongan", spouse: "Mrs. Betty Moyongan" },
-  { name: "Mr. Roger Balantin", spouse: "Mrs. Delia Balantin" },
-  { name: "Honorable Mayor Roderick Awingan", spouse: "Mrs. ____ Awingan" },
-  { name: "Engr Roy Kepes", spouse: "Vice Gove MaryRose Kepes Fongwan" },
-  { name: "Mr. Bobos Nestor Fongwan", spouse: "Mrs. Marga Sison" },
-  { name: "Mr. Junvic Suguinsin", spouse: "Mrs. Lavenia Inson" },
-  { name: "Mr. Salino Dosdos Jr", spouse: "Mrs. Gina Guiang" },
-  { name: "Mr. Pampilo Balajadia", spouse: "Mrs. Angelica Balajadia" },
-  { name: "Mr. Alan M. Serduar", spouse: "Mrs. Oliva Serduar" },
-  { name: "Mr. Miguel Franco", spouse: "Mrs. Angela Balajadia" },
-  // Remaining Female Sponsors without paired male
-  { name: "Mrs. Carina C. Watanabe", spouse: "" },
-  { name: "Mrs. Cecile Palilio", spouse: "" },
-  { name: "Mrs. Nida Saguinsin", spouse: "" },
-  { name: "Mrs. Araceli Pitogo", spouse: "" },
-  { name: "Mrs. Alda Unidad", spouse: "" },
-  { name: "Mrs. Reine Bernadeth Bolanos", spouse: "" },
+  // Add principal sponsors here
+  // Format: { name: "Mr./Mrs. Name", spouse: "Mrs./Mr. Spouse Name" }
+  // Or for single sponsors: { name: "Mr./Mrs. Name", spouse: "" }
+  
+  // Example:
+  // { name: "Mr. John Doe", spouse: "Mrs. Jane Doe" },
+  // { name: "Mrs. Single Sponsor", spouse: "" },
 ]

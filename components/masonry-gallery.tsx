@@ -71,7 +71,7 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
           >
             <div className="relative w-full overflow-hidden rounded-xl border border-[#E0CFB5]/40 bg-white/5 backdrop-blur-sm shadow-lg hover:shadow-xl transition-all duration-300 hover:border-[#E0CFB5]/60">
               {!loaded[img.src] && (
-                <div className="aspect-[3/4] sm:aspect-[4/5] w-full animate-pulse bg-gradient-to-br from-[#909E8D]/30 via-[#525E2C]/25 to-[#909E8D]/30" />
+                <div className="aspect-[3/4] sm:aspect-[4/5] w-full animate-pulse bg-gradient-to-br from-[#8498B0]/30 via-[#8498B0]/25 to-[#8498B0]/30" />
               )}
               <img
                 ref={(el) => setImgRef(el, img.src)}
@@ -85,7 +85,7 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
                   loaded[img.src] ? "opacity-100" : "opacity-0 absolute top-0 left-0"
                 }`}
               />
-              <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-t from-[#909E8D]/40 via-transparent to-transparent" />
+              <div className="pointer-events-none absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-t from-[#8498B0]/40 via-transparent to-transparent" />
             </div>
           </button>
           ))}
@@ -100,7 +100,7 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
         >
           <div className="relative max-w-6xl w-full flex items-center justify-center" onClick={(e) => e.stopPropagation()}>
             <button
-              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 text-[#FFFFFF] bg-[#909E8D]/80 hover:bg-[#909E8D] border border-[#E0CFB5]/50 hover:border-[#E0CFB5] rounded-full px-4 py-2.5 transition-all duration-200 shadow-lg hover:scale-110"
+              className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 text-[#FFFFFF] bg-[#8498B0]/80 hover:bg-[#8498B0] border border-[#E0CFB5]/50 hover:border-[#E0CFB5] rounded-full px-4 py-2.5 transition-all duration-200 shadow-lg hover:scale-110"
               onClick={() => setLightboxIdx((i) => (i == null ? null : (i - 1 + filtered.length) % filtered.length))}
             >
               ‹
@@ -111,13 +111,13 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
               className="max-h-[80vh] w-auto rounded-xl shadow-2xl border border-[#E0CFB5]/30"
             />
             <button
-              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-[#FFFFFF] bg-[#909E8D]/80 hover:bg-[#909E8D] border border-[#E0CFB5]/50 hover:border-[#E0CFB5] rounded-full px-4 py-2.5 transition-all duration-200 shadow-lg hover:scale-110"
+              className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 text-[#FFFFFF] bg-[#8498B0]/80 hover:bg-[#8498B0] border border-[#E0CFB5]/50 hover:border-[#E0CFB5] rounded-full px-4 py-2.5 transition-all duration-200 shadow-lg hover:scale-110"
               onClick={() => setLightboxIdx((i) => (i == null ? null : (i + 1) % filtered.length))}
             >
               ›
             </button>
             <button
-              className="absolute top-3 right-3 text-[#FFFFFF] bg-[#909E8D]/80 hover:bg-[#909E8D] border border-[#E0CFB5]/50 hover:border-[#E0CFB5] rounded-full px-4 py-2 transition-all duration-200 shadow-lg hover:scale-105 font-sans text-sm"
+              className="absolute top-3 right-3 text-[#FFFFFF] bg-[#8498B0]/80 hover:bg-[#8498B0] border border-[#E0CFB5]/50 hover:border-[#E0CFB5] rounded-full px-4 py-2 transition-all duration-200 shadow-lg hover:scale-105 font-sans text-sm"
               onClick={() => setLightboxIdx(null)}
             >
               Close
@@ -130,7 +130,7 @@ export default function MasonryGallery({ images }: { images: ImageItem[] }) {
       <div className="mt-8 flex justify-center">
         <button
           type="button"
-          className="px-6 py-3 rounded-full bg-gradient-to-r from-[#E0CFB5] to-[#E0CFB5]/90 text-[#909E8D] font-semibold border border-[#E0CFB5] hover:from-[#E0CFB5]/90 hover:to-[#E0CFB5] hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-sans"
+          className="px-6 py-3 rounded-full bg-gradient-to-r from-[#E0CFB5] to-[#E0CFB5]/90 text-[#8498B0] font-semibold border border-[#E0CFB5] hover:from-[#E0CFB5]/90 hover:to-[#E0CFB5] hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-sans"
           onClick={() => topRef.current?.scrollIntoView({ behavior: "smooth" })}
         >
           Back to top

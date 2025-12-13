@@ -43,7 +43,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     time: ceremonyTime,
     title: "Wedding Ceremony",
-    description: `Celebrate Christian & Kate as they say "I do."`,
+    description: `Celebrate ${groomNickname} & ${brideNickname} as they say "I do."`,
     location: ceremonyVenue,
     icon: RingsIcon,
   },
@@ -57,7 +57,7 @@ const timelineEvents: TimelineEvent[] = [
   {
     time: "Send-off",
     title: "Send-off",
-    description: `A warm send-off for Christian & Kate as they begin their new chapter together.`,
+    description: `A warm send-off for ${groomNickname} & ${brideNickname} as they begin their new chapter together.`,
     location: receptionVenue,
     icon: CarIcon,
     imageSrc: "/weddingTimeline/Send-off.png",
@@ -79,31 +79,28 @@ export function WeddingTimeline() {
         <div className="backdrop-blur-md bg-white/40 border border-white/40 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 lg:p-12 shadow-2xl max-w-4xl mx-auto">
           {/* Small label */}
           <p
-            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase mb-2`}
-            style={{ color: "#525E2C" }}
+            className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm tracking-[0.3em] uppercase mb-2 text-black`}
           >
             Wedding Day Schedule
           </p>
 
           <h2 
-            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-1.5 sm:mb-3 md:mb-4"
-            style={{ color: "#525E2C" }}
+            className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal mb-1.5 sm:mb-3 md:mb-4 text-black"
           >
             Our Wedding Timeline
           </h2>
 
           <p 
-            className="text-[11px] sm:text-sm md:text-base lg:text-lg max-w-xl mx-auto leading-relaxed px-2"
-            style={{ color: "#525E2C" }}
+            className="text-[11px] sm:text-sm md:text-base lg:text-lg max-w-xl mx-auto leading-relaxed px-2 text-black"
           >
-            Join Christian &amp; Kate as we celebrate our special day together.
+            Join {groomNickname} &amp; {brideNickname} as we celebrate our special day together.
           </p>
 
           {/* Simple divider */}
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#525E2C]/60 to-transparent" />
-            <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#525E2C" }} />
-            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#525E2C]/60 to-transparent" />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-r from-transparent via-[#8498B0]/60 to-transparent" />
+            <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: "#8498B0" }} />
+            <div className="w-8 sm:w-12 md:w-16 h-px bg-gradient-to-l from-transparent via-[#8498B0]/60 to-transparent" />
           </div>
         </div>
       </div>
@@ -111,13 +108,13 @@ export function WeddingTimeline() {
       {/* Timeline - improved desktop layout */}
       <div className="relative z-10 max-w-6xl mx-auto px-3 sm:px-5 lg:px-8">
         {/* Vertical timeline line - desktop */}
-        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#909E8D]/40 via-[#E0CFB5]/55 to-[#909E8D]/40 -translate-x-1/2 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#F0F0EE]" />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#F0F0EE]" />
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#8498B0]/40 via-[#E0CFB5]/55 to-[#8498B0]/40 -translate-x-1/2 pointer-events-none">
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#F1F1EF]" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1.5 h-1.5 rounded-full bg-[#F1F1EF]" />
         </div>
 
         {/* Mobile timeline line */}
-        <div className="md:hidden absolute left-6 sm:left-7 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#909E8D]/45 via-[#E0CFB5]/60 to-[#909E8D]/45 pointer-events-none" />
+        <div className="md:hidden absolute left-6 sm:left-7 top-0 bottom-0 w-0.5 bg-gradient-to-b from-[#8498B0]/45 via-[#E0CFB5]/60 to-[#8498B0]/45 pointer-events-none" />
 
         <div className="space-y-4 sm:space-y-5 md:space-y-8 lg:space-y-10">
           {timelineEvents.map((event, index) => (
@@ -183,10 +180,10 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
         {/* Time */}
         <div className="flex items-center gap-1.5">
           <Clock
-            className={`${mobile ? "w-3.5 h-3.5" : "w-4 h-4 md:w-5 md:h-5"} text-[#909E8D] flex-shrink-0`}
+            className={`${mobile ? "w-3.5 h-3.5" : "w-4 h-4 md:w-5 md:h-5"} text-[#8498B0] flex-shrink-0`}
           />
           <p
-            className={`${mobile ? "text-[10px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] text-[#909E8D] uppercase`}
+            className={`${mobile ? "text-[10px]" : "text-xs sm:text-sm md:text-base"} font-bold tracking-[0.15em] text-[#8498B0] uppercase`}
           >
             {event.time}
           </p>
@@ -216,7 +213,7 @@ function TimelineCard({ event, Icon, mobile }: { event: TimelineEvent; Icon: Tim
             } border-t border-[#E0CFB5]/70`}
           >
             <MapPin
-              className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} text-[#909E8D] mt-0.5 flex-shrink-0`}
+              className={`${mobile ? "w-3 h-3" : "w-3.5 h-3.5 md:w-4 md:h-4"} text-[#8498B0] mt-0.5 flex-shrink-0`}
             />
             <p className={`${mobile ? "text-[10px]" : "text-xs md:text-sm"} text-[#37413A]/80 leading-relaxed`}>
               {event.location}
@@ -241,7 +238,7 @@ function IconBadge({
     <div
       className={`${
         mobile ? "w-10 h-10" : "w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20"
-      } rounded-full border-2 border-[#E0CFB5]/70 bg-gradient-to-br from-white to-[#F0F0EE] flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300`}
+      } rounded-full border-2 border-[#E0CFB5]/70 bg-gradient-to-br from-white to-[#F1F1EF] flex items-center justify-center shadow-md hover:scale-105 transition-transform duration-300`}
     >
       {imageSrc ? (
         <Image
@@ -264,9 +261,9 @@ function IconBadge({
   )
 }
 
-/* Hand-drawn–style timeline icons (sage green line art) */
+/* Hand-drawn–style timeline icons (blue-gray line art) */
 
-const iconStroke = "#909E8D"
+const iconStroke = "#8498B0"
 
 function GuestsIcon(props: React.SVGProps<SVGSVGElement>) {
   return (

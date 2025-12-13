@@ -21,75 +21,57 @@ export function Welcome() {
       <div className="absolute inset-0 bg-[#E0CFB5]/50 z-0" />
       
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
-        <div className="relative overflow-hidden rounded-3xl sm:rounded-[2rem] border border-[#E0CFB5]/70 bg-[#525E2C] backdrop-blur-2xl shadow-[0_16px_60px_rgba(0,0,0,0.35)] px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
-          {/* Layered glass + light accents for readability */}
-          <div className="pointer-events-none absolute inset-0">
-            {/* Solid primary background with slight transparency */}
-            <div
-              className="absolute inset-0 opacity-90"
-              style={{
-                backgroundColor: "#525E2C",
-              }}
-            />
-            {/* Subtle radial highlights */}
-            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.55),transparent_60%)] opacity-80" />
-            <div className="absolute bottom-[-6rem] right-[-2rem] w-64 h-64 bg-[radial-gradient(circle_at_center,rgba(144,158,141,0.35),transparent_60%)] opacity-85" />
-            {/* Inner border glow */}
-            <div className="absolute inset-[1px] rounded-[inherit] border border-white/30" />
-          </div>
+        {/* Glass effect container with transparent glass effect */}
+        <div className="relative overflow-hidden rounded-3xl sm:rounded-[2rem] border border-white/30 backdrop-blur-lg bg-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.1)] px-5 sm:px-8 md:px-10 py-8 sm:py-10 md:py-12">
 
           <div className="relative text-center space-y-6 sm:space-y-7 md:space-y-8">
           {/* Main heading */}
-          <div className="space-y-1.5 sm:space-y-2.5">
+          <div className="space-y-2 sm:space-y-3">
             <p
-              className={`${cormorant.className} text-[0.7rem] sm:text-xs md:text-sm uppercase tracking-[0.28em] text-[#F0F0EE]`}
-              style={{ textShadow: "0 1px 8px rgba(255,255,255,0.4)" }}
+              className={`${cormorant.className} text-xs sm:text-sm md:text-base uppercase tracking-[0.28em] text-black font-semibold`}
             >
               {groomName} &amp; {brideName}
             </p>
             <h2
-              className="style-script-regular text-3xl sm:text-4xl md:text-5xl lg:text-[2.9rem] text-[#F0F0EE]"
-              style={{ textShadow: "0 3px 14px rgba(255,255,255,0.5)" }}
+              className="style-script-regular text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-black font-normal"
             >
               Welcome to our wedding website
             </h2>
 
 
             {/* Verse */}
-            <div className="space-y-1">
+            <div className="space-y-2 pt-2">
               <p
-                className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#F0F0EE] italic`}
-                style={{ textShadow: "0 1px 8px rgba(255,255,255,0.4)" }}
+                className={`${cormorant.className} text-sm sm:text-base md:text-lg text-black italic leading-relaxed px-2 sm:px-4`}
               >
                 &quot;Love is patient, love is kind. It does not envy, it does not boast, it is not proud… It always protects, always trusts, always hopes, always perseveres.&quot;
               </p>
               <p
-                className={`${cormorant.className} text-[0.65rem] sm:text-xs md:text-sm text-[#F0F0EE] tracking-[0.2em] uppercase`}
-                style={{ textShadow: "0 1px 6px rgba(255,255,255,0.35)" }}
+                className={`${cormorant.className} text-xs sm:text-sm md:text-base text-black tracking-[0.2em] uppercase font-medium`}
               >
                 1 Corinthians 13:4–7 (NIV)
               </p>
             </div>
 
             {/* Divider */}
-            <div className="flex items-center justify-center gap-2 pt-1">
-              <span className="h-px w-10 sm:w-16 md:w-20 bg-white/30" />
-              <span className="w-1.5 h-1.5 rounded-full bg-[#D1AB6D] shadow-[0_0_14px_rgba(209,171,109,0.9)]" />
-              <span className="h-px w-10 sm:w-16 md:w-20 bg-white/30" />
+            <div className="flex items-center justify-center gap-2 pt-2">
+              <span className="h-px w-12 sm:w-20 md:w-24 bg-black/30" />
+              <span className="w-2 h-2 rounded-full bg-[#D2AC6E] shadow-[0_0_16px_rgba(210,172,110,0.8)]" />
+              <span className="h-px w-12 sm:w-20 md:w-24 bg-black/30" />
             </div>
           </div>
 
           {/* Body text */}
           <div
-            className={`${cormorant.className} text-[0.85rem] sm:text-sm md:text-base leading-relaxed sm:leading-7 text-[#F0F0EE] space-y-3 sm:space-y-4`}
+            className={`${cormorant.className} text-base sm:text-lg md:text-xl leading-relaxed sm:leading-8 md:leading-9 text-black space-y-4 sm:space-y-5 px-2 sm:px-4`}
           >
-            <p>
+            <p className="font-normal">
               We&apos;ve found a love that&apos;s a true blessing, and we give thanks to God for writing the
               beautiful story of our journey together. With hearts full of gratitude, we&apos;re excited to share
               this blessing with you! Thank you for your love, prayers, and support. We can&apos;t wait to celebrate
               this joyful day together!
             </p>
-            <p>
+            <p className="font-normal">
               Feel free to browse through important information and other helpful reminders — everything you
               need to join us in this celebration!
             </p>

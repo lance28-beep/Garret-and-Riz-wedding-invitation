@@ -7,7 +7,7 @@ import { Hero as MainHero } from "@/components/sections/hero"
 import { Welcome } from "@/components/sections/welcome"
 import { Countdown } from "@/components/sections/countdown"
 import { WeddingTimeline } from "@/components/sections/wedding-timeline"
-import { Narrative } from "@/components/sections/narrative"
+// import { Narrative } from "@/components/sections/narrative"
 import { Gallery } from "@/components/sections/gallery"
 import { Messages } from "@/components/sections/messages"
 import { Details } from "@/components/sections/details"
@@ -23,6 +23,7 @@ import { LoadingScreen } from "@/components/loader/LoadingScreen"
 import { Navbar } from "@/components/navbar"
 import { AppState } from "@/components/types"
 import BackgroundMusic from "@/components/background-music"
+import { CoupleVideo } from "@/components/sections/couple-video"
 
 const Silk = dynamic(() => import("@/components/silk"), { ssr: false })
 const GuestList = dynamic(() => import("@/components/sections/guest-list").then(mod => ({ default: mod.GuestList })), { ssr: false })
@@ -53,7 +54,7 @@ export default function Home() {
             {enableDecor && (
               <div className="fixed inset-0 z-0 pointer-events-none">
                 <Suspense fallback={<div className="w-full h-full bg-gradient-to-b from-primary/10 to-secondary/5" />}>
-                  <Silk speed={5} scale={1.1} color="#F0F0EE" noiseIntensity={0.8} rotation={0.3} />
+                  <Silk speed={5} scale={1.1} color="#F1F1EF" noiseIntensity={0.8} rotation={0.3} />
                 </Suspense>
               </div>
             )}
@@ -62,9 +63,9 @@ export default function Home() {
               {appState === AppState.DETAILS && <Navbar />}
               <MainHero />
               <Welcome />
-              {/* <CoupleVideo /> */}
+              <CoupleVideo />
               <Countdown />
-              <Narrative />
+              {/* <Narrative /> */}
               <Gallery />
               <Messages />
               <Details />
