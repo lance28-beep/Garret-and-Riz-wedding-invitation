@@ -184,21 +184,21 @@ export function SnapShare() {
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.25 }}
                   >
-                    <Image src="/mobile-background/couple (3).JPG" alt="Wedding moment 1" fill className="object-cover" />
+                    <Image src="/mobile-background/couple (3).webp" alt="Wedding moment 1" fill className="object-cover" />
                   </motion.div>
                   <motion.div
                     className="relative aspect-square rounded-xl overflow-hidden shadow-md border-2 border-[#8498B0]/30 hover:border-[#8498B0]/50 transition-all"
                     whileHover={{ scale: 1.03 }}
                     transition={{ duration: 0.25 }}
                   >
-                    <Image src="/mobile-background/couple (4).JPG" alt="Wedding moment 2" fill className="object-cover" />
+                    <Image src="/mobile-background/couple (4).webp" alt="Wedding moment 2" fill className="object-cover" />
                   </motion.div>
                   <motion.div
                     className="relative col-span-2 aspect-[3/2] rounded-xl overflow-hidden shadow-md border-2 border-[#8498B0]/30 hover:border-[#8498B0]/50 transition-all"
                     whileHover={{ scale: 1.02 }}
                     transition={{ duration: 0.25 }}
                   >
-                    <Image src="/desktop-background/couple (8).JPG" alt="Wedding moment 3" fill className="object-cover" />
+                    <Image src="/desktop-background/couple (8).webp" alt="Wedding moment 3" fill className="object-cover" />
                   </motion.div>
                 </div>
                 <p className={`${cormorant.className} text-white text-[10px] sm:text-xs text-center mt-4 sm:mt-5 md:mt-6 px-1.5`}>

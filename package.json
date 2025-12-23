@@ -8,6 +8,8 @@
     "lint": "eslint .",
     "start": "next start",
     "images:webp": "tsx scripts/convert-to-webp.ts",
+    "images:compress": "node scripts/compress-images.mjs",
+    "images:compress:delete": "node scripts/compress-images.mjs --delete-originals",
     "analyze": "ANALYZE=true next build",
     "bundle:explore": "mkdir -p scripts/reports && source-map-explorer '.next/static/chunks/*.js' --json=scripts/reports/source-map-explorer.json || true",
     "lh:mobile": "lighthouse http://localhost:3000 --output=json,html --output-path=./scripts/reports/lh-mobile --only-categories=performance,accessibility,best-practices,seo --form-factor=mobile --throttling-method=devtools --screenEmulation.mobile=true",

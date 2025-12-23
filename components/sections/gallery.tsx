@@ -22,12 +22,12 @@ const windSong = WindSong({
 const galleryHashtag = `#${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`
 
 const galleryItems = [ 
-  { image: "/mobile-background/couple (1).JPG", text: " " },
-  { image: "/mobile-background/couple (2).JPG", text: " " },
-  { image: "/mobile-background/couple (3).JPG", text: " " },
-  { image: "/mobile-background/couple (4).JPG", text: " " },
-  { image: "/mobile-background/couple (5).JPG", text: " " },
-  { image: "/mobile-background/couple (6).JPG", text: " " },
+  { image: "/mobile-background/couple (1).webp", text: " " },
+  { image: "/mobile-background/couple (2).webp", text: " " },
+  { image: "/mobile-background/couple (3).webp", text: " " },
+  { image: "/mobile-background/couple (4).webp", text: " " },
+  { image: "/mobile-background/couple (5).webp", text: " " },
+  { image: "/mobile-background/couple (6).webp", text: " " },
 
 ]
 
