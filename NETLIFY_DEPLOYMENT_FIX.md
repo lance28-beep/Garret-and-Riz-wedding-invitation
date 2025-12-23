@@ -12,13 +12,20 @@ The serverless function bundle (`___netlify-server-handler`) exceeded Netlify's 
 
 ## Solution Implemented
 
-### 1. **Next.js Configuration** (`next.config.mjs`)
+### 1. **Gallery Page Fix** (`app/gallery/page.tsx`) - **CRITICAL**
+Changed from `force-dynamic` to `force-static`:
+- **Before:** Server-side rendering on every request required bundling 858MB of images in the function
+- **After:** Static generation at build time - images stay in CDN, not in function bundle
+- Changed from async `fs.promises` to sync `fs.readdirSync` for build-time execution
+- This is the **main fix** that prevents the function from being too large
+
+### 2. **Next.js Configuration** (`next.config.mjs`)
 Added `output: 'standalone'` to optimize the build output:
 - Creates a minimal standalone server
 - Reduces function bundle size significantly
 - Only includes necessary dependencies
 
-### 2. **Netlify Configuration** (`netlify.toml`)
+### 3. **Netlify Configuration** (`netlify.toml`)
 Created comprehensive Netlify configuration:
 - Configured `@netlify/plugin-nextjs` for optimal Next.js support
 - Set up CDN caching for static assets (images, CSS, JS)
@@ -26,13 +33,13 @@ Created comprehensive Netlify configuration:
 - Excluded large image folders from function bundle using `included_files`
 - Set `node_bundler = "esbuild"` for faster, smaller bundles
 
-### 3. **Git LFS Setup** (`.gitattributes`)
+### 4. **Git LFS Setup** (`.gitattributes`)
 Configured Git Large File Storage for large assets:
 - Tracks large images in `desktop-background/` and `mobile-background/`
 - Prevents repository bloat
 - Improves git performance
 
-### 4. **Netlify Ignore** (`.netlifyignore`)
+### 5. **Netlify Ignore** (`.netlifyignore`)
 Excluded unnecessary files from deployment:
 - Development files and documentation
 - Build cache

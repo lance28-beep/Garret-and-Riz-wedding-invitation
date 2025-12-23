@@ -1,16 +1,18 @@
-import fs from "fs/promises"
+import fs from "fs"
 import path from "path"
 import Link from "next/link"
 import MasonryGallery from "@/components/masonry-gallery"
 import { siteConfig } from "@/content/site"
 
-// Generate on each request so newly added images in public/ appear without a rebuild
-export const dynamic = "force-dynamic"
+// Generate at build time as a static page to avoid bundling images in serverless function
+// This prevents the 858MB of images from being included in the function bundle
+export const dynamic = "force-static"
 
-async function getImagesFrom(dir: string) {
+// Generate the image list at build time
+function getImagesFrom(dir: string) {
   const abs = path.join(process.cwd(), "public", dir)
   try {
-    const entries = await fs.readdir(abs, { withFileTypes: true })
+    const entries = fs.readdirSync(abs, { withFileTypes: true })
     return entries
       .filter((e) => e.isFile())
       .map((e) => `/${dir}/${e.name}`)
@@ -21,14 +23,14 @@ async function getImagesFrom(dir: string) {
   }
 }
 
-export default async function GalleryPage() {
+export default function GalleryPage() {
   const { groomNickname, brideNickname } = siteConfig.couple
   const galleryHashtag = `#${groomNickname.replace(/\s+/g, "")}And${brideNickname.replace(/\s+/g, "")}Wedding`
 
-  const [desktop, mobile] = await Promise.all([
-    getImagesFrom("desktop-background"),
-    getImagesFrom("mobile-background"),
-  ])
+  // Get images at build time (synchronously)
+  const desktop = getImagesFrom("desktop-background")
+  const mobile = getImagesFrom("mobile-background")
+  
   const images = [
     ...desktop.map((src) => ({ src, category: "desktop" as const })),
     ...mobile.map((src) => ({ src, category: "mobile" as const })),
