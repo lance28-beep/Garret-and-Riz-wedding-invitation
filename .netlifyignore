@@ -1,0 +1,23 @@
+# Netlify Ignore - files to exclude from deployment
+# These files will still be served via CDN but won't be bundled in serverless functions
+
+# Development files
+.git/
+.vscode/
+.cursor/
+*.md
+!README.md
+
+# Test and documentation
+scripts/reports/
+performance-report.md
+COLOR_*.md
+*_SETUP.md
+UPDATE_SUMMARY.md
+
+# Node modules (handled by Netlify)
+node_modules/
+
+# Build artifacts (will be rebuilt)
+.next/cache/
+

@@ -4,6 +4,8 @@ const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'tr
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Use standalone output for optimized Netlify deployment
+  output: 'standalone',
   eslint: {
     ignoreDuringBuilds: true,
   },
