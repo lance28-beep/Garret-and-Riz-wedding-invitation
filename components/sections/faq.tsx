@@ -35,7 +35,7 @@ const faqItems: FAQItem[] = [
   {
     question: "How do I RSVP?",
     answer:
-      `Please RSVP on or before December 20, 2025 through the RSVP section on this invitation. We kindly ask for your response to help us prepare for the big day.`,
+      `Please RSVP on or before ${siteConfig.details.rsvp.deadline} through the RSVP section on this invitation. We kindly ask for your response to help us prepare for the big day.`,
   },
   {
     question: "Will there be assigned seating?",

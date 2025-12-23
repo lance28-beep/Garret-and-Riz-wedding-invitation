@@ -11,8 +11,8 @@ import { WeddingTimeline } from "@/components/sections/wedding-timeline"
 import { Gallery } from "@/components/sections/gallery"
 import { Messages } from "@/components/sections/messages"
 import { Details } from "@/components/sections/details"
-import { Entourage } from "@/components/sections/entourage"
-import { PrincipalSponsors } from "@/components/sections/principal-sponsors"
+import Image from "next/image"
+import { Section } from "@/components/section"
 import { BookOfGuests } from "@/components/sections/book-of-guests"
 import { Registry } from "@/components/sections/registry"
 import { FAQ } from "@/components/sections/faq"
@@ -70,8 +70,35 @@ export default function Home() {
               <Messages />
               <Details />
               <WeddingTimeline />
-              <Entourage />
-              <PrincipalSponsors />
+              <Section
+                id="entourage-sponsors"
+                className="relative py-12 md:py-16 lg:py-20 overflow-hidden bg-gradient-to-br from-[#8498B0] via-[#BFCDD8] to-[#8498B0]"
+              >
+                {/* Background gradient */}
+                <div className="absolute inset-0 pointer-events-none overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-br from-[#8498B0] via-[#BFCDD8] to-[#8498B0]" />
+                  <div className="absolute top-0 left-0 w-full h-1/2 bg-gradient-to-b from-[#8498B0]/90 via-[#BFCDD8]/60 to-transparent" />
+                  <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#8498B0]/90 via-[#BFCDD8]/60 to-transparent" />
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_rgba(241,241,239,0.25),transparent_70%)]" />
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 max-w-6xl mx-auto px-1 sm:px-3 md:px-5">
+                  <div className="relative w-full rounded-lg sm:rounded-2xl overflow-hidden border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,152,176,0.18)] p-1.5 sm:p-3.5 md:p-5">
+                    <div className="relative w-full aspect-auto rounded-md sm:rounded-xl overflow-hidden">
+                      <Image
+                        src="/Details/entourage and sponsor.png"
+                        alt="Entourage and Sponsor"
+                        width={1200}
+                        height={800}
+                        className="w-full h-auto object-contain"
+                        sizes="(min-width: 1024px) 1000px, (min-width: 640px) 800px, 100vw"
+                        priority={false}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Section>
               <GuestList />
               <BookOfGuests />
               <Registry />

@@ -148,18 +148,10 @@ export function CoupleVideo() {
         id="couple-video"
         className="relative py-6 sm:py-8 md:py-12 lg:py-16 overflow-hidden"
       >
-      {/* Background image */}
+      {/* Background gradient */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <Image
-          src="/Details/couplevideobackground.jpg"
-          alt="Background"
-          fill
-          className="object-cover"
-          priority
-          quality={90}
-        />
-        {/* Optional overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#BFCDD8] via-[#E0CFB5] to-[#F1F1EF]" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#8498B0]/30 via-transparent to-[#D2AC6E]/20" />
       </div>
 
       {/* Header - compact, with updated title */}

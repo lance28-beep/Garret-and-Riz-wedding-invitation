@@ -3,25 +3,36 @@
 import { useState } from "react"
 import Image from "next/image"
 import { Section } from "@/components/section"
-import { Smartphone } from "lucide-react"
+import { Building2, CreditCard } from "lucide-react"
 
 const paymentMethods = [
   {
-    id: "gcash",
-    label: "GCash",
-    description: "Instant transfer via GCash",
+    id: "unionbank",
+    label: "Union Bank",
+    description: "Bank transfer via Union Bank",
     accent: "from-[#BCCFC0] to-[#8EA58B]",
-    Icon: Smartphone,
+    Icon: Building2,
+  },
+  {
+    id: "rcbc",
+    label: "RCBC Bank",
+    description: "Bank transfer via RCBC",
+    accent: "from-[#BCCFC0] to-[#8EA58B]",
+    Icon: CreditCard,
   },
 ] as const
 
 type PaymentId = typeof paymentMethods[number]["id"]
 
 export function Registry() {
-  const [activeMethod, setActiveMethod] = useState<PaymentId>("gcash")
+  const [activeMethod, setActiveMethod] = useState<PaymentId>("unionbank")
 
   const activeDetails = paymentMethods.find((method) => method.id === activeMethod)
-  const activeQrSrc = activeMethod === "gcash" ? "/QR/QR.png" : ""
+  const activeQrSrc = activeMethod === "unionbank" 
+    ? "/QR/UnionBank.png" 
+    : activeMethod === "rcbc" 
+    ? "/QR/RCBC.png" 
+    : ""
 
   return (
     <Section
@@ -107,7 +118,7 @@ export function Registry() {
                     />
                   </div>
                   <p className="text-sm sm:text-base text-[#324D3E] max-w-md">
-                    Scan the QR code to send your gift via GCash.
+                    Scan the QR code to send your gift via {activeDetails.label}.
                   </p>
                 </div>
               </div>
