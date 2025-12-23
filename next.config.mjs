@@ -4,8 +4,7 @@ const withBundleAnalyzer = bundleAnalyzer({ enabled: process.env.ANALYZE === 'tr
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Use standalone output for optimized Netlify deployment
-  output: 'standalone',
+  // Don't use standalone output with Netlify - the plugin handles deployment
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -28,7 +27,23 @@ const nextConfig = {
       'lucide-react',
       '@radix-ui/react-dialog',
       '@radix-ui/react-select',
+      'recharts',
     ],
+    // Optimize server components
+    serverComponentsExternalPackages: ['three', '@react-three/fiber'],
+  },
+  // Webpack configuration to optimize bundle size
+  webpack: (config, { isServer }) => {
+    // Optimize for server-side bundle
+    if (isServer) {
+      // Externalize heavy client-only packages from server bundle
+      config.externals = config.externals || [];
+      config.externals.push({
+        'three': 'commonjs three',
+        '@react-three/fiber': 'commonjs @react-three/fiber',
+      });
+    }
+    return config;
   },
   headers: async () => {
     const isDevelopment = process.env.NODE_ENV === 'development';

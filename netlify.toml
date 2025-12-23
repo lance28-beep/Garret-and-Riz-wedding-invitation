@@ -6,7 +6,7 @@
   NODE_VERSION = "22"
   NPM_FLAGS = "--legacy-peer-deps"
 
-# Configure Next.js Runtime
+# Configure Next.js Runtime - use latest version with better optimization
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
@@ -49,10 +49,10 @@
   status = 200
   query = {url = ":url", w = ":width", q = ":quality"}
 
-# Function size optimization
+# Function size optimization - critical for deployment success
 [functions]
-  # Increase function size limit (max 50MB on free tier, 250MB on pro)
-  node_bundler = "esbuild"
-  # Exclude large files from function bundle
-  included_files = ["!public/desktop-background/**", "!public/mobile-background/**"]
+  # Use default bundler (not esbuild) for better Next.js compatibility
+  node_bundler = "nft"
+  # Explicitly set directory_functions_src to avoid bundling public folder
+  directory = ".netlify/functions-internal"
 
