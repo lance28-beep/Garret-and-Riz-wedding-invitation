@@ -145,7 +145,7 @@ export function Details() {
               time: siteConfig.ceremony.time,
               mapLink: ceremonyMapsLink,
               gradient: "from-[#8498B0] via-[#8498B0] to-[#E0CFB5]",
-              image: "/Details/Santuario de San Vicente de Paul.jpg",
+              image: "/Details/Sanctuario de San Vicente de Paul.jpg",
             },
             {
               key: "reception",
@@ -322,7 +322,7 @@ export function Details() {
                   <p className="text-[10px] sm:text-xs text-[#8498B0]/80 mb-2">Kindly align attire below.</p>
                   <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
                     <Image
-                      src="/Details/guest Attire.png"
+                      src="/Details/guest new attire.png"
                       alt="Guest attire guideline"
                       fill
                       className="object-contain"
@@ -535,7 +535,7 @@ export function Details() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -skew-x-12 animate-shimmer opacity-0 group-hover:opacity-100 transition-opacity duration-1000 z-0" />
 
               <Image
-                src={showImageModal === "ceremony" ? "/Details/Santuario de San Vicente de Paul.jpg" : "/Details/Bulwagan de San Vicente.jpg"}
+                src={showImageModal === "ceremony" ? "/Details/Sanctuario de San Vicente de Paul.jpg" : "/Details/Bulwagan de San Vicente.jpg"}
                 alt={showImageModal === "ceremony" ? siteConfig.ceremony.location : siteConfig.reception.location}
                 fill
                 className="object-contain p-6 sm:p-8 md:p-10 transition-transform duration-700 group-hover:scale-105 z-10"

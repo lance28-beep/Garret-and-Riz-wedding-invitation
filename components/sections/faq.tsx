@@ -20,7 +20,7 @@ const faqItems: FAQItem[] = [
   {
     question: "Is there a dress code?",
     answer:
-      `We kindly request our guests to dress in formal attire with a color of our motif. Please see the Attire section for details.\n\nMale Sponsor: ${siteConfig.dressCode.sponsors.male}\nFemale Sponsor: ${siteConfig.dressCode.sponsors.female}\nGents: ${siteConfig.dressCode.guests.gents}\nLadies: ${siteConfig.dressCode.guests.ladies}`,
+      "We kindly request our guests to dress within our wedding colors and align with the attire guide in the Details section.\n\nPrincipal Sponsors:\nNinong: Barong\nNinang: Long Dress\n\nWedding Guests:\nSemi formal – dress, polo shirt or long sleeves.",
   },
   {
     question: "Can I bring a plus one?",
