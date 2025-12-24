@@ -16,11 +16,11 @@ const desktopImages = [
 ]
 
 const mobileImages = [
-  "/mobile-background/couple (1).webp",
-  "/mobile-background/couple (2).webp",
-  "/mobile-background/couple (3).webp",
-  "/mobile-background/couple (4).webp",
-  "/mobile-background/couple (5).webp",
+  "/desktop-background/couple (69).webp",
+  "/desktop-background/couple (13).webp",
+  "/desktop-background/couple (19).webp",
+  "/desktop-background/couple (41).webp",
+  "/desktop-background/couple (50).webp",
 
 
 ]
