@@ -22,7 +22,7 @@ export const siteConfig = {
     location: "Santuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
     venue: "Santuario de San Vicente de Paul",
     date: "March 18, 2026",
-    day: "Tuesday",
+    day: "Wednesday",
     time: "3:30 PM",
     entourageTime: "2:45 PM",
     guestsTime: "2:45 PM",

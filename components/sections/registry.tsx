@@ -62,7 +62,7 @@ export function Registry() {
           <p 
             className="text-xs sm:text-sm md:text-base lg:text-lg font-light max-w-2xl mx-auto leading-relaxed px-2 text-black"
           >
-            Your presence is the greatest gift. Should you wish to give, a monetary gift to help us begin our new life together would mean so much to us.
+            As Love is what the night is all about, your presence is one we can't celebrate without. But should you still believe that a gift is worth giving, a small envelope for our future is a delightful blessing.
           </p>
           
           <div className="flex items-center justify-center gap-2 mt-3 sm:mt-4">

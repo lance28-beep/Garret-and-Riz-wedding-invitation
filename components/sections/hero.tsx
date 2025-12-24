@@ -585,7 +585,7 @@ export function Hero() {
             <div className="w-full flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-stretch">
             <a
               href="#guest-list"
-              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E0CFB5]/70`}
+              className={`${cormorant.className} group relative flex-1 sm:min-w-[200px] md:min-w-[220px] rounded-lg overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-xl focus-visible:-translate-y-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E0CFB5]/70 focus-visible:ring-offset-2`}
               style={{
                 backgroundColor: "#E0CFB5",
                 boxShadow: "0 10px 24px rgba(224,207,181,0.4)",
@@ -599,7 +599,7 @@ export function Hero() {
                 e.currentTarget.style.boxShadow = "0 10px 24px rgba(224,207,181,0.4)";
               }}
             >
-              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-[0.65rem] sm:text-[0.7rem] md:text-xs uppercase tracking-[0.32em] sm:tracking-[0.36em] text-[#F1F1EF] font-semibold transition-all duration-300" style={{ textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
+              <span className="relative z-10 inline-flex h-full min-h-[3rem] sm:min-h-[3.25rem] w-full items-center justify-center px-6 sm:px-8 text-sm sm:text-base md:text-lg uppercase tracking-[0.24em] sm:tracking-[0.28em] text-black font-semibold transition-all duration-300">
                 Confirm Attendance
               </span>
             </a>

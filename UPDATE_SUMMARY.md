@@ -9,7 +9,7 @@
 - **Monogram**: Updated from "CK" to "GR"
 
 ### Wedding Details
-- **Date**: March 18, 2026 (Tuesday)
+- **Date**: March 18, 2026 (Wednesday)
 - **Time**: 3:30 PM
 - **Guest Arrival Time**: 2:45 PM (45 minutes before ceremony)
 - **Entourage Arrival**: 2:45 PM

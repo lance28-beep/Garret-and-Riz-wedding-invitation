@@ -67,6 +67,12 @@ export function Details() {
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.ceremony.location)}`
   const receptionMapsLink = `https://maps.google.com/?q=${encodeURIComponent(siteConfig.reception.location)}`
 
+
+    // Palettes (used only for color chips in attire card) - Blue-gray & tan motif
+    const sponsorPalette = ["#CBB3AF", "#C3BBB9"]
+    const guestPalette = ["#C6C5CD", "#BFCFDF", "#E0D8CB"]
+    const secondaryPalette = ["#F1F1EF", "#E0CFB5", "#BFCDD8", "#8498B0", "#8498B0"]
+    
   const openInMaps = (link: string) => {
     window.open(link, "_blank", "noopener,noreferrer")
   }
@@ -238,7 +244,8 @@ export function Details() {
       </div>
 
       {/* Additional Information - Compact for mobile */}
-      <div className="relative z-10 mb-4 sm:mb-7 max-w-4xl mx-auto px-3 sm:px-5">
+    {/* Additional Information - Compact for mobile */}
+    <div className="relative z-10 mb-4 sm:mb-7 max-w-4xl mx-auto px-3 sm:px-5">
         <div className="text-center mb-3 sm:mb-5">
           <h3 className="text-base sm:text-xl md:text-2xl font-semibold mb-1 sm:mb-2 text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]">
             Important Information
@@ -247,6 +254,7 @@ export function Details() {
             Kindly take note of these details to help the day flow smoothly and beautifully.
           </p>
         </div>
+
 
         <div className="space-y-3 sm:space-y-4">
           {/* Attire Guidelines */}
@@ -257,20 +265,96 @@ export function Details() {
               </h4>
             </div>
 
-            <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6">
-              <div className="relative w-full aspect-auto rounded-xl overflow-hidden">
-                <Image
-                  src="/Details/Details Attire.png"
-                  alt="Attire guide"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-contain"
-                  sizes="(min-width: 1024px) 1000px, (min-width: 640px) 800px, 100vw"
-                  priority={false}
-                />
+
+            <div className="relative w-full rounded-2xl overflow-hidden border border-white/60 shadow-xl bg-white p-4 sm:p-6 space-y-3 sm:space-y-4">
+              <div className="text-center space-y-2 sm:space-y-3">
+                <p className="text-xs sm:text-sm font-semibold text-[#8498B0]">
+                  {siteConfig.dressCode.note}
+                </p>
+                <p className="text-xs sm:text-sm text-[#8498B0]/90">
+                  Please dress within our wedding colors to help create a soft, elegant romantic celebration.
+                </p>
+              </div>
+
+
+              <div className="space-y-4">
+                <div className="border-t border-[#E0CFB5] pt-4">
+                  <h5 className="font-semibold text-xs sm:text-sm text-[#8498B0] mb-2">Principal Sponsors</h5>
+                  <p className="text-[10px] sm:text-xs text-[#8498B0]/80 mb-2">Kindly align attire below.</p>
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
+                    <Image
+                      src="/Details/sponsor attire.png"
+                      alt="Principal sponsors attire guideline"
+                      fill
+                      className="object-contain"
+                      sizes="(min-width: 1024px) 700px, (min-width: 640px) 600px, 100vw"
+                      priority={false}
+                    />
+                  </div>
+                  <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+                    <p className="text-[#8498B0]">
+                      <span className="font-semibold">Ninong:</span> Barong
+                    </p>
+                    <p className="text-[#8498B0]">
+                      <span className="font-semibold">Ninang:</span> Long Dress
+                    </p>
+                    <div className="pt-1">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#8498B0] mb-1">
+                        Palette
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {sponsorPalette.map((color) => (
+                          <span
+                            key={color}
+                            className="w-7 h-7 rounded-full border border-white/70 shadow-sm"
+                            style={{ backgroundColor: color }}
+                            title={color}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div className="border-t border-[#F5E5D9] pt-4">
+                  <h5 className="font-semibold text-xs sm:text-sm text-[#8498B0] mb-2">Wedding Guests</h5>
+                  <p className="text-[10px] sm:text-xs text-[#8498B0]/80 mb-2">Kindly align attire below.</p>
+                  <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
+                    <Image
+                      src="/Details/guest Attire.png"
+                      alt="Guest attire guideline"
+                      fill
+                      className="object-contain"
+                      sizes="(min-width: 1024px) 700px, (min-width: 640px) 600px, 100vw"
+                      priority={false}
+                    />
+                  </div>
+                  <div className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm">
+                    <p className="text-[#8498B0]">
+                      Semi formal, dress, polo shirt or long sleeves
+                    </p>
+                    <div className="pt-1">
+                      <p className="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.15em] text-[#8498B0] mb-1">
+                        Palette
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {guestPalette.map((color) => (
+                          <span
+                            key={color}
+                            className="w-7 h-7 rounded-full border border-white/70 shadow-sm"
+                            style={{ backgroundColor: color }}
+                            title={color}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
 
           {/* Arrival Time & Reception Guidelines */}
           <div className="relative rounded-2xl border border-white/40 bg-white/85 backdrop-blur-lg shadow-[0_18px_40px_rgba(132,152,176,0.18)] p-3.5 sm:p-5 overflow-hidden">

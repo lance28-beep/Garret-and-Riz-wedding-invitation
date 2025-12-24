@@ -22,12 +22,12 @@ const windSong = WindSong({
 const galleryHashtag = `#${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`
 
 const galleryItems = [ 
-  { image: "/mobile-background/couple (1).webp", text: " " },
-  { image: "/mobile-background/couple (2).webp", text: " " },
-  { image: "/mobile-background/couple (3).webp", text: " " },
-  { image: "/mobile-background/couple (4).webp", text: " " },
-  { image: "/mobile-background/couple (5).webp", text: " " },
-  { image: "/mobile-background/couple (6).webp", text: " " },
+  { image: "/desktop-background/couple (16).webp", text: " " },
+  { image: "/desktop-background/couple (41).webp", text: " " },
+  { image: "/desktop-background/couple (45).webp", text: " " },
+  { image: "/desktop-background/couple (47).webp", text: " " },
+  { image: "/desktop-background/couple (56).webp", text: " " },
+  { image: "/desktop-background/couple (69).webp", text: " " },
 
 ]
 
@@ -110,18 +110,8 @@ export function Gallery() {
   return (
     <Section
       id="gallery"
-      className="relative bg-[#8498B0] py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
+      className="relative py-10 sm:py-12 md:py-16 lg:py-20 overflow-hidden"
     >
-      {/* Background image */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <img
-          src="/Details/galleryBackground.jpg"
-          alt=""
-          aria-hidden="true"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-
       {/* Header */}
       <div className="relative z-10 text-center mb-8 sm:mb-10 md:mb-12 px-4">
         {/* Glass effect container with transparent glass effect */}

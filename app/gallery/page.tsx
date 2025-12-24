@@ -133,7 +133,7 @@ export default function GalleryPage() {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                 <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-[#F7E7CE]/30 border-2 border-[#E0CFB5]/60 rounded-full text-white font-semibold text-xs sm:text-sm md:text-base shadow-md">
-                  {galleryHashtag}
+                 #GarretTookHisRiz
                 </span>
               </div>
               <Link
