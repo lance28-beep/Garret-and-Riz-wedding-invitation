@@ -8,7 +8,7 @@ export const siteConfig = {
   wedding: {
     date: "March 18, 2026",
     time: "3:30 PM",
-    venue: "Sanctuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
+    venue: "Santuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
     tagline: "are getting married!",
     theme: "Dusty Blue & Tan Motif",
     motif: "#9EAFC0, #8B9DC3, #D2B48C, #C9B299, #E8DED0",
@@ -19,8 +19,8 @@ export const siteConfig = {
     },
   },
   ceremony: {
-    location: "Sanctuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
-    venue: "Sanctuario de San Vicente de Paul",
+    location: "Santuario de San Vicente de Paul, 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila",
+    venue: "Santuario de San Vicente de Paul",
     date: "March 18, 2026",
     day: "Wednesday",
     time: "3:30 PM",

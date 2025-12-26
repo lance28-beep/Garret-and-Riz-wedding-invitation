@@ -15,7 +15,7 @@
 - **Entourage Arrival**: 2:45 PM
 
 ### Venue Information
-- **Ceremony**: Sanctuario de San Vicente de Paul
+- **Ceremony**: Santuario de San Vicente de Paul
 - **Reception**: Bulwagan de San Vicente
 - **Address**: 221 Tandang Sora Ave, Quezon City, 1116 Metro Manila
 - **Note**: Both ceremony and reception are at the same location
