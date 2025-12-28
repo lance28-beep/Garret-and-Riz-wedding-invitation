@@ -283,7 +283,7 @@ export function Details() {
                   <p className="text-[10px] sm:text-xs text-[#8498B0]/80 mb-2">Kindly align attire below.</p>
                   <div className="relative w-full aspect-[4/3] sm:aspect-[5/3] rounded-xl overflow-hidden border border-[#F5E5D9] bg-[#FDF9F6] mb-3">
                     <Image
-                      src="/Details/sponsor attire.png"
+                      src="/Details/sponsorattire.png"
                       alt="Principal sponsors attire guideline"
                       fill
                       className="object-contain"
